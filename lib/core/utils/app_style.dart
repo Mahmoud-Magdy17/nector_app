@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 final class AppTextStyle {
-  static TextStyle gilroy18px600 = const TextStyle(
+  static TextStyle gilroy26px600 = const TextStyle(
     fontFamily: "Gilroy",
-    fontSize: 18,
+    fontSize: 26,
     fontWeight: FontWeight.w600,
     
   );

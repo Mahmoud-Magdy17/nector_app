@@ -9,4 +9,5 @@ class AppRouter {
     splash: const SplashView(),
     onBoarding: const OnBoarding(),
   };
+  
 }

@@ -24,7 +24,8 @@ class CustomButton extends StatelessWidget {
         ),
         child: Text(
           text,
-          style: AppTextStyle.gilroy18px600.copyWith(
+          style: AppTextStyle.gilroy26px600.copyWith(
+            fontSize: 18,
             color: AppColors.white,
           ),
         ),

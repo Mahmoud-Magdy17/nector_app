@@ -5,6 +5,7 @@ import 'package:nector_app/core/utils/app_functions.dart';
 import 'package:nector_app/core/utils/app_strings.dart';
 import 'package:nector_app/core/utils/app_style.dart';
 import 'package:nector_app/core/widgets/custom_button.dart';
+import 'package:nector_app/features/authontication/presentation/views/login.dart';
 
 class OnboardingViewBody extends StatelessWidget {
   const OnboardingViewBody({
@@ -21,7 +22,7 @@ class OnboardingViewBody extends StatelessWidget {
             color: AppColors.white,
             size: 64,
           ),
-          SizedBox(
+          const SizedBox(
             height: 35,
           ),
           Padding(
@@ -29,13 +30,13 @@ class OnboardingViewBody extends StatelessWidget {
             child: Text(
               AppStrings.welcome,
               textAlign: TextAlign.center,
-              style: AppTextStyle.gilroy18px600.copyWith(
+              style: AppTextStyle.gilroy26px600.copyWith(
                 color: AppColors.white,
                 fontSize: 48,
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 8,
           ),
           Text(
@@ -44,14 +45,14 @@ class OnboardingViewBody extends StatelessWidget {
               color: const Color(0xfffcfcfcb2).withOpacity(0.7),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 40,
           ),
           CustomButton(
             padding: 30.0,
             text: AppStrings.getStarted,
             onPressed: () {
-              navigationPushReplacement(context,Scaffold());
+              navigationPushReplacement(context, LoginView());
             },
           )
         ],

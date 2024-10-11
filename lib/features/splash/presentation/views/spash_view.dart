@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nector_app/core/router/app_router.dart';
 import 'package:nector_app/core/utils/app_assets.dart';
 import 'package:nector_app/core/utils/app_colors.dart';
-import 'package:nector_app/core/utils/functions.dart';
+import 'package:nector_app/core/utils/app_functions.dart';
 import 'package:nector_app/features/splash/presentation/views/widgets/animated_logo_widget.dart';
 
 class SplashView extends StatelessWidget {

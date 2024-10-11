@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 /// Type of the Images
 enum ImgType { assetImage, networkImage }
 
-class AnimatedLogo extends StatefulWidget {
+class AnimatedSplash extends StatefulWidget {
   final int seconds;
   final Widget nextScreen;
   final ImgType imgType;
@@ -16,7 +16,7 @@ class AnimatedLogo extends StatefulWidget {
   final Color indicatorColor;
   final double indicatorHeight;
   final Color backgroundColor;
-  const AnimatedLogo(
+  const AnimatedSplash(
       {Key? key,
       required this.backgroundColor,
       required this.seconds,
@@ -31,10 +31,10 @@ class AnimatedLogo extends StatefulWidget {
       : super(key: key);
 
   @override
-  State<AnimatedLogo> createState() => _EasySplashState();
+  State<AnimatedSplash> createState() => _EasySplashState();
 }
 
-class _EasySplashState extends State<AnimatedLogo> {
+class _EasySplashState extends State<AnimatedSplash> {
   @override
   void initState() {
     super.initState();

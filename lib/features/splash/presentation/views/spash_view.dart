@@ -10,7 +10,7 @@ class SplashView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AnimatedLogo(
+    return AnimatedSplash(
       seconds: 2,
       nextScreen: AppRouter.routes[AppRouter.onBoarding],
       imgType: ImgType.assetImage,
@@ -18,7 +18,7 @@ class SplashView extends StatelessWidget {
       hasIndicator: true,
       indicatorColor: AppColors.offWhite,
       indicatorHeight: 16,
-      indicatorAlignment: Alignment(8, 120),
+      indicatorAlignment: const Alignment(8, 120),
       backgroundColor: AppColors.primaryColor,
     );
   }

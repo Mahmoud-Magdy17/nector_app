@@ -16,7 +16,7 @@ class CustomPasswordFormField extends StatelessWidget {
       children: [
         Text(
           AppStrings.password,
-          style: AppTextStyle.gilroy26px600.copyWith(fontSize: 16),
+          style: AppTextStyle.gilroy26px600.copyWith(fontSize: 16,color: AppColors.grey),
         ),
         TextFormField(
           obscureText: true,

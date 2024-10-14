@@ -11,7 +11,7 @@ class OnBoarding extends StatelessWidget {
     return Scaffold(
       body: Container(
         width: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage(AppAssets.onBoardingBackground),
             fit: BoxFit.fill,

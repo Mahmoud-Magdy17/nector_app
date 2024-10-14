@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() async {
-  final pubspecPath = 'pubspec.yaml';
+  const pubspecPath = 'pubspec.yaml';
   final fontsDirectory = Directory('assets/fonts');
 
   // Check if fonts directory exists

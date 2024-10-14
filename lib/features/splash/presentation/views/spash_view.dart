@@ -12,7 +12,7 @@ class SplashView extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedSplash(
       seconds: 2,
-      nextScreen: AppRouter.routes[AppRouter.onBoarding],
+      nextScreen: AppRouter.routes[AppRouter.onBoardingView],
       imgType: ImgType.assetImage,
       image: AppAssets.logoSplash,
       hasIndicator: true,
@@ -30,7 +30,7 @@ void futureNavigation(context) {
     () {
       navigationPushReplacement(
         context,
-        AppRouter.routes[AppRouter.onBoarding],
+        AppRouter.routes[AppRouter.onBoardingView],
       );
     },
   );

@@ -17,7 +17,7 @@ class AnimatedSplash extends StatefulWidget {
   final double indicatorHeight;
   final Color backgroundColor;
   const AnimatedSplash(
-      {Key? key,
+      {super.key,
       required this.backgroundColor,
       required this.seconds,
       required this.nextScreen,
@@ -27,8 +27,7 @@ class AnimatedSplash extends StatefulWidget {
       required this.hasIndicator,
       this.indicatorAlignment = Alignment.bottomCenter,
       this.indicatorColor = Colors.blueAccent,
-      this.indicatorHeight = 30})
-      : super(key: key);
+      this.indicatorHeight = 30});
 
   @override
   State<AnimatedSplash> createState() => _EasySplashState();

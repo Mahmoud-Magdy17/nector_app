@@ -11,7 +11,7 @@ class NectorApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: AppRouter.routes[AppRouter.splash],
+      home: AppRouter.routes[AppRouter.splashView],
     );
   }
 }

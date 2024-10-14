@@ -5,6 +5,7 @@ import 'package:nector_app/core/widgets/custom_button.dart';
 import 'custom_email_form_field.dart';
 import 'custom_password_form_field.dart';
 import 'dont_have_account_action.dart';
+import 'forget_password_button.dart';
 
 class LoginViewBody extends StatelessWidget {
   const LoginViewBody({super.key});
@@ -22,21 +23,9 @@ class LoginViewBody extends StatelessWidget {
           height: 30,
         ),
         const CustomPasswordFormField(),
-        
-        Row(
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: [
-            TextButton(
-              onPressed: () {},
-              child: const Text(
-                AppStrings.forgetPassword,
-              ),
-            ),
-          ],
-        ),
+        const ForgetPasswordButton(),
         const SizedBox(height: 10),
         CustomButton(
-          padding: 0,
           text: AppStrings.logIn,
           onPressed: () {},
         ),

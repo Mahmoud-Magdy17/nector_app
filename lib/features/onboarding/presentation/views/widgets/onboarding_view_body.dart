@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:nector_app/core/router/app_router.dart';
 import 'package:nector_app/core/utils/app_colors.dart';
 import 'package:nector_app/core/utils/app_functions.dart';
 import 'package:nector_app/core/utils/app_strings.dart';
 import 'package:nector_app/core/utils/app_style.dart';
 import 'package:nector_app/core/widgets/custom_button.dart';
-import 'package:nector_app/features/authontication/presentation/views/login.dart';
 
 class OnboardingViewBody extends StatelessWidget {
   const OnboardingViewBody({
@@ -48,12 +48,17 @@ class OnboardingViewBody extends StatelessWidget {
           const SizedBox(
             height: 40,
           ),
-          CustomButton(
-            padding: 30.0,
-            text: AppStrings.getStarted,
-            onPressed: () {
-              navigationPushReplacement(context, LoginView());
-            },
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 30),
+            child: CustomButton(
+              text: AppStrings.getStarted,
+              onPressed: () {
+                navigationPushReplacement(
+                  context,
+                  AppRouter.routes[AppRouter.loginView],
+                );
+              },
+            ),
           )
         ],
       ),

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nector_app/core/utils/app_assets.dart';
 import 'package:nector_app/core/utils/app_colors.dart';
-import 'package:nector_app/core/utils/app_strings.dart';
 import 'package:nector_app/core/utils/app_style.dart';
 
 class AuthonticationViewsHeader extends StatelessWidget {
@@ -18,7 +17,7 @@ class AuthonticationViewsHeader extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Container(
-          padding: const EdgeInsets.only(top: 60, bottom: 70),
+          padding: const EdgeInsets.only( bottom: 70),
           alignment: Alignment.center,
           width: MediaQuery.of(context).size.width,
           child: Image.asset(
@@ -27,12 +26,12 @@ class AuthonticationViewsHeader extends StatelessWidget {
           ),
         ),
         Text(
-          AppStrings.loging,
+          title,
           style: AppTextStyle.gilroy26px600
               .copyWith(color: const Color(0xff181725)),
         ),
         Text(
-          AppStrings.enterYourEmailAndPassword,
+          subTitle,
           style: AppTextStyle.gilroy16px500.copyWith(
             color: AppColors.grey,
           ),

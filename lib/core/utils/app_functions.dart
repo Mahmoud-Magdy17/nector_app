@@ -6,3 +6,10 @@ void navigationPushReplacement(context, newRoute) {
     MaterialPageRoute(builder: (ctx) => newRoute),
   );
 }
+
+void navigationPush(context, newRoute) {
+  Navigator.push(
+    context,
+    MaterialPageRoute(builder: (ctx) => newRoute),
+  );
+}

@@ -23,14 +23,15 @@ class DontHaveAcountAction extends StatelessWidget {
           ),
         ),
         TextButton(
-            onPressed: onPressed,
-            child: Text(
-              action,
-              style: AppTextStyle.gilroy26px600.copyWith(
-                fontSize: 14,
-                color: AppColors.primaryColor,
-              ),
-            )),
+          onPressed: onPressed,
+          child: Text(
+            action,
+            style: AppTextStyle.gilroy26px600.copyWith(
+              fontSize: 14,
+              color: AppColors.primaryColor,
+            ),
+          ),
+        ),
       ],
     );
   }

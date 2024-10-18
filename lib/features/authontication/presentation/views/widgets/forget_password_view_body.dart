@@ -4,7 +4,7 @@ import 'package:nector_app/core/widgets/custom_button.dart';
 
 import 'authontication_view_header.dart';
 import 'custom_email_form_field.dart';
-import 'reset_password_modal_bottom_sheet.dart';
+import 'reset_password_enter_code_modal_bottom_sheet.dart';
 
 class ForgetPasswordViewBody extends StatelessWidget {
   const ForgetPasswordViewBody({

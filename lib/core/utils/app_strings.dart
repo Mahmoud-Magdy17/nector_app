@@ -15,4 +15,14 @@ final class AppStrings {
   static const String enterYourEmailForVer =
       "Enter your email for verification process wewill send 5 digits code to your email";
   static const String continuE = "Continue";
+  static const String resetPassword = "Reset Password";
+  static const String enterTheCodeTha =
+      "Enter the code that was sent to your email address";
+  static const String enterThe5Dig = "Enter the 5 digits code";
+  static const String sendCode = "Send Code";
+  static const String enterNewPassword =
+      "Enter new password for your account ro reset password";
+  static const String congratulations = "Congratulations";
+  static const String yourChagePasswordIsSuccess = "Your change Password Is Success";
+  static const String welcomeToOurApp = "Welcome to our app"; 
 }

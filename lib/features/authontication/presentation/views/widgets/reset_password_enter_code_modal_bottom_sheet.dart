@@ -7,16 +7,17 @@ import 'package:nector_app/features/authontication/presentation/views/widgets/co
 import 'package:nector_app/features/authontication/presentation/views/widgets/custom_reset_password_buttom.dart';
 import 'package:nector_app/features/authontication/presentation/views/widgets/reset_password_new_email_bottom_sheet.dart';
 
-class ResetPasswordModalBottomSheet extends StatelessWidget {
-  const ResetPasswordModalBottomSheet({
+class ResetPasswordEnterCodeModalBottomSheet extends StatelessWidget {
+  const ResetPasswordEnterCodeModalBottomSheet({
     super.key,
   });
 
   @override
   Widget build(BuildContext context) {
     return CustomResetPasswordBottomSheet(
+      title: AppStrings.resetPassword,
+      subTitle: AppStrings.enterTheCodeTha,
       child: Column(
-      
         children: [
           Text(
             AppStrings.enterThe5Dig,

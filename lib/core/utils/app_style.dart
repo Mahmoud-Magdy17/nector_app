@@ -17,4 +17,9 @@ final class AppTextStyle {
     fontSize: 14,
     fontWeight: FontWeight.w400,
   );
+  static TextStyle gilroy28px800 = const TextStyle(
+    fontFamily: "Gilroy",
+    fontSize: 28,
+    fontWeight: FontWeight.w800,
+  );
 }

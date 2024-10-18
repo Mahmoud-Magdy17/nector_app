@@ -32,9 +32,10 @@ class ForgetPasswordViewBody extends StatelessWidget {
               text: AppStrings.continuE,
               onPressed: () {
                 showModalBottomSheet(
+                  isScrollControlled: true,
                   context: context,
                   builder: (context) {
-                    return const ResetPasswordModalBottomSheet();
+                    return const ResetPasswordEnterCodeModalBottomSheet();
                   },
                 );
               })

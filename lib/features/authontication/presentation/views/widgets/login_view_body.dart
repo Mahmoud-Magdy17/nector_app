@@ -22,7 +22,7 @@ class LoginViewBody extends StatelessWidget {
         const SizedBox(
           height: 30,
         ),
-        const CustomPasswordFormField(),
+        const CustomPasswordFormField(label: AppStrings.password,),
         const ForgetPasswordButton(),
         const SizedBox(height: 10),
         CustomButton(
@@ -34,7 +34,9 @@ class LoginViewBody extends StatelessWidget {
         ),
         DontHaveAcountAction(
           action: AppStrings.signUp,
-          onPressed: () {},
+          onPressed: () {
+            
+          },
         ),
       ],
     );

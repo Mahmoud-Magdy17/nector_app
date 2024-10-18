@@ -18,7 +18,7 @@ class ForgetPasswordButton extends StatelessWidget {
           onPressed: () {
             navigationPush(
               context,
-              AppRouter.routes[AppRouter.forgetPassword],
+              AppRouter.routes[AppRouter.forgetPasswordView],
             );
           },
           child: Text(

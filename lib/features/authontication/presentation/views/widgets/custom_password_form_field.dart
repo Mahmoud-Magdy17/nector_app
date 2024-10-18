@@ -7,8 +7,9 @@ import 'package:nector_app/core/utils/app_style.dart';
 class CustomPasswordFormField extends StatelessWidget {
   const CustomPasswordFormField({
     super.key,
+    required this.label,
   });
-
+  final String label;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -16,7 +17,8 @@ class CustomPasswordFormField extends StatelessWidget {
       children: [
         Text(
           AppStrings.password,
-          style: AppTextStyle.gilroy26px600.copyWith(fontSize: 16,color: AppColors.grey),
+          style: AppTextStyle.gilroy26px600
+              .copyWith(fontSize: 16, color: AppColors.grey),
         ),
         TextFormField(
           obscureText: true,

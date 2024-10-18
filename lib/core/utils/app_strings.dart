@@ -23,6 +23,8 @@ final class AppStrings {
   static const String enterNewPassword =
       "Enter new password for your account ro reset password";
   static const String congratulations = "Congratulations";
-  static const String yourChagePasswordIsSuccess = "Your change Password Is Success";
-  static const String welcomeToOurApp = "Welcome to our app"; 
+  static const String yourChagePasswordIsSuccess =
+      "Your change Password Is Success";
+  static const String welcomeToOurApp = "Welcome to our app";
+  static const String confirmPassword = "Confirm Password";
 }

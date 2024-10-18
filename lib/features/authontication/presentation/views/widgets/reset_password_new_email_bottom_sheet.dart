@@ -1,52 +1,50 @@
 import 'package:flutter/material.dart';
-import 'package:nector_app/core/utils/app_colors.dart';
+import 'package:nector_app/core/router/app_router.dart';
+import 'package:nector_app/core/utils/app_functions.dart';
 import 'package:nector_app/core/utils/app_strings.dart';
-import 'package:nector_app/core/utils/app_style.dart';
+import 'package:nector_app/core/widgets/custom_button.dart';
+import 'package:nector_app/features/authontication/presentation/views/widgets/custom_email_form_field.dart';
+import 'package:nector_app/features/authontication/presentation/views/widgets/custom_password_form_field.dart';
+import 'package:nector_app/features/authontication/presentation/views/widgets/custom_reset_password_buttom.dart';
 
 class ResetPasswordNewEmailBottomSheet extends StatelessWidget {
   const ResetPasswordNewEmailBottomSheet({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      clipBehavior: Clip.hardEdge,
-      padding: EdgeInsets.only(
-        top: 36,
-        left: 16,
-        right: 16,
-        bottom: MediaQuery.of(context).viewInsets.bottom + 4,
-      ),
-      decoration: BoxDecoration(
-        color: AppColors.white,
-        borderRadius: const BorderRadius.only(
-          topLeft: Radius.circular(30),
-          topRight: Radius.circular(30),
-        ),
-      ),
-      height: 600,
-      width: double.infinity,
-      child: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              AppStrings.resetPassword,
-              style: AppTextStyle.gilroy26px600,
-            ),
-            const SizedBox(
-              height: 8,
-            ),
-            Text(
-              AppStrings.enterTheCodeTha,
-              style: AppTextStyle.gilroy14px400.copyWith(
-                color: AppColors.grey,
-              ),
-            ),
-            const SizedBox(
-              height: 24,
-            ),
-          ],
-        ),
+    return CustomResetPasswordBottomSheet(
+      height: 660,
+      title: AppStrings.resetPassword,
+      subTitle: AppStrings.enterNewPassword,
+      child: Column(
+        children: [
+          const CustomEmailFormField(
+            label: AppStrings.email,
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          const CustomPasswordFormField(
+            label: AppStrings.password,
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          const CustomPasswordFormField(
+            label: AppStrings.confirmPassword,
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          CustomButton(
+            text: AppStrings.resetPassword,
+            onPressed: () {
+              Navigator.pop(context);
+              navigationPushReplacement(
+                  context, AppRouter.routes[AppRouter.resetPasswordDoneView]);
+            },
+          )
+        ],
       ),
     );
   }

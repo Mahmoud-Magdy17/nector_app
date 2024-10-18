@@ -15,7 +15,8 @@ class CustomEmailFormField extends StatelessWidget {
       children: [
         Text(
           label,
-          style: AppTextStyle.gilroy26px600.copyWith(fontSize: 16,color: AppColors.grey),
+          style: AppTextStyle.gilroy26px600
+              .copyWith(fontSize: 16, color: AppColors.grey),
         ),
         TextFormField(
           decoration: InputDecoration(

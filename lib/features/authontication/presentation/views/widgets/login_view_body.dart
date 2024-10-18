@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:nector_app/core/router/app_router.dart';
+import 'package:nector_app/core/utils/app_functions.dart';
 import 'package:nector_app/core/utils/app_strings.dart';
 import 'package:nector_app/core/widgets/custom_button.dart';
 
@@ -22,7 +24,9 @@ class LoginViewBody extends StatelessWidget {
         const SizedBox(
           height: 30,
         ),
-        const CustomPasswordFormField(label: AppStrings.password,),
+        const CustomPasswordFormField(
+          label: AppStrings.password,
+        ),
         const ForgetPasswordButton(),
         const SizedBox(height: 10),
         CustomButton(
@@ -32,10 +36,14 @@ class LoginViewBody extends StatelessWidget {
         const SizedBox(
           height: 25,
         ),
-        DontHaveAcountAction(
+        OtherAuthenticationActoins(
+          text: AppStrings.dontHaveAnAccount,
           action: AppStrings.signUp,
           onPressed: () {
-            
+            navigationPushReplacement(
+              context,
+              AppRouter.routes[AppRouter.signUpView],
+            );
           },
         ),
       ],

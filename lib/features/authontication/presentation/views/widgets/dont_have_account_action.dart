@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:nector_app/core/utils/app_colors.dart';
-import 'package:nector_app/core/utils/app_strings.dart';
 import 'package:nector_app/core/utils/app_style.dart';
 
-class DontHaveAcountAction extends StatelessWidget {
-  const DontHaveAcountAction({
+class OtherAuthenticationActoins extends StatelessWidget {
+  const OtherAuthenticationActoins({
     super.key,
+    required this.text,
     required this.action,
     required this.onPressed,
   });
+  final String text;
   final String action;
   final void Function() onPressed;
   @override
@@ -17,7 +18,7 @@ class DontHaveAcountAction extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          AppStrings.dontHaveAnAccount,
+          text,
           style: AppTextStyle.gilroy26px600.copyWith(
             fontSize: 14,
           ),

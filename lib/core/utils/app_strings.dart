@@ -27,4 +27,8 @@ final class AppStrings {
       "Your change Password Is Success";
   static const String welcomeToOurApp = "Welcome to our app";
   static const String confirmPassword = "Confirm Password";
+  static const String enterYourCredentialsToContinue =
+      "Enter your credentials to continue";
+  static const String userName = "Username";
+  static const String alreadyHaveAnAccount = "Already have an account?";
 }

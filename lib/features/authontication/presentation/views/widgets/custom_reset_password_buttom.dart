@@ -3,9 +3,9 @@ import 'package:nector_app/core/utils/app_colors.dart';
 import 'package:nector_app/core/utils/app_strings.dart';
 import 'package:nector_app/core/utils/app_style.dart';
 
-class ResetPasswordNewEmailBottomSheet extends StatelessWidget {
-  const ResetPasswordNewEmailBottomSheet({super.key});
-
+class CustomResetPasswordBottomSheet extends StatelessWidget {
+  const CustomResetPasswordBottomSheet({super.key, required this.child});
+  final Widget child;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -23,7 +23,7 @@ class ResetPasswordNewEmailBottomSheet extends StatelessWidget {
           topRight: Radius.circular(30),
         ),
       ),
-      height: 600,
+      height: 440,
       width: double.infinity,
       child: SingleChildScrollView(
         child: Column(
@@ -45,6 +45,7 @@ class ResetPasswordNewEmailBottomSheet extends StatelessWidget {
             const SizedBox(
               height: 24,
             ),
+            child
           ],
         ),
       ),

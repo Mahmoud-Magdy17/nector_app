@@ -9,6 +9,7 @@ class AppRouter {
   static String loginView = "/loginView";
   static String forgetPassword = "/forgetPasswordView";
 
+
   static Map<String, dynamic> routes = {
     splashView: const SplashView(),
     onBoardingView: const OnBoarding(),

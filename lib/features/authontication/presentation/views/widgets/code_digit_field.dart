@@ -8,14 +8,14 @@ class CodeDigitField extends StatelessWidget {
   Widget build(BuildContext context) {
     return 
     Container(
-      margin: EdgeInsets.all(0),
+      margin: const EdgeInsets.all(0),
       decoration: BoxDecoration(
         color: AppColors.primaryColor,
         borderRadius: BorderRadius.circular(8),
       ),
       width: 44,
       height: 44,
-      child: TextField(
+      child: const TextField(
         keyboardType: TextInputType.number,
         
       ),

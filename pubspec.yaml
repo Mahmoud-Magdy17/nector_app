@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   font_awesome_flutter: ^10.7.0
   easy_splash: ^0.0.6
+  phonenumber_input: ^0.0.3
 
 dev_dependencies:
   flutter_test:

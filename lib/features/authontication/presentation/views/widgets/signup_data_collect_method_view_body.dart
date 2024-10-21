@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:nector_app/core/router/app_router.dart';
 import 'package:nector_app/core/utils/app_colors.dart';
+import 'package:nector_app/core/utils/app_functions.dart';
 import 'package:nector_app/core/utils/app_strings.dart';
 import 'package:nector_app/core/utils/app_style.dart';
 import 'package:nector_app/core/widgets/custom_text_button.dart';
@@ -29,7 +31,12 @@ class SignupDataCollectMethodViewBody extends StatelessWidget {
             ),
             CustomTextButton(
               text: "use phone number",
-              onPressed: () {},
+              onPressed: () {
+                navigationPush(
+                  context,
+                  AppRouter.routes[AppRouter.phoneNumberEnteringView],
+                );
+              },
               color: AppColors.grey,
             ),
             const SizedBox(

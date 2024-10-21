@@ -31,8 +31,23 @@ final class AppStrings {
       "Enter your credentials to continue";
   static const String userName = "Username";
   static const String alreadyHaveAnAccount = "Already have an account?";
-  static const String getYourGroceriesWithNectar ='Get your groceries with nectar';
+  static const String getYourGroceriesWithNectar =
+      'Get your groceries with nectar';
   static const String orConnectWithSocialMedia = "Or connect with social media";
   static const String continueWithGoogle = "Continue with Google";
   static const String continueWithFacebook = "Continue with Facebook";
+  static const String enterYourMobileNumber = "Enter your mobile number";
+  static const String mobileNumber = "Mobile Number";
+  static const String enterYour4DigitNumber = "Enter your 4-digit code";
+  static const String code = "code";
+  static const String resendCode = "Resend Code";
+  static const String selectYourLocation = "Select Your Location";
+  static const String
+      swithchOnYourLocationToStayInTuneWithWhatsHappeningInYourArea =
+      "Swithch on your location to stay in tune with what's happening in your area";
+  static const String yourZone = "Your Zone";
+  static const String yourArea = "Your Area";
+  static const String typesOfYourArea = "Types of your area";
+  static const String submit = "Submit";
+  
 }

@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:nector_app/core/utils/app_colors.dart';
 import 'package:nector_app/core/utils/app_style.dart';
 
-class CustomButton extends StatelessWidget {
-  const CustomButton({
+class CustomTextButton extends StatelessWidget {
+  const CustomTextButton({
     super.key,
     required this.text,
     required this.onPressed,
+    this.color = AppColors.primaryColor,
   });
+  final Color color;
   final Function() onPressed;
   final String text;
   @override
@@ -17,7 +19,9 @@ class CustomButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
-          backgroundColor: AppColors.primaryColor,
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(19)),
+          backgroundColor: color,
           fixedSize: const Size(double.maxFinite, 67),
         ),
         child: Text(

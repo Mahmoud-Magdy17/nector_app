@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nector_app/core/utils/app_strings.dart';
-import 'package:nector_app/core/widgets/custom_button.dart';
+import 'package:nector_app/core/widgets/custom_text_button.dart';
 
 import 'authontication_view_header.dart';
 import 'custom_email_form_field.dart';
@@ -28,7 +28,7 @@ class ForgetPasswordViewBody extends StatelessWidget {
           const SizedBox(
             height: 63,
           ),
-          CustomButton(
+          CustomTextButton(
               text: AppStrings.continuE,
               onPressed: () {
                 showModalBottomSheet(

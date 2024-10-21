@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nector_app/core/router/app_router.dart';
 import 'package:nector_app/core/utils/app_functions.dart';
 import 'package:nector_app/core/utils/app_strings.dart';
-import 'package:nector_app/core/widgets/custom_button.dart';
+import 'package:nector_app/core/widgets/custom_text_button.dart';
 
 import 'custom_email_form_field.dart';
 import 'custom_password_form_field.dart';
@@ -29,7 +29,7 @@ class LoginViewBody extends StatelessWidget {
         ),
         const ForgetPasswordButton(),
         const SizedBox(height: 10),
-        CustomButton(
+        CustomTextButton(
           text: AppStrings.logIn,
           onPressed: () {},
         ),

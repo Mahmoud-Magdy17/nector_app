@@ -31,4 +31,8 @@ final class AppStrings {
       "Enter your credentials to continue";
   static const String userName = "Username";
   static const String alreadyHaveAnAccount = "Already have an account?";
+  static const String getYourGroceriesWithNectar ='Get your groceries with nectar';
+  static const String orConnectWithSocialMedia = "Or connect with social media";
+  static const String continueWithGoogle = "Continue with Google";
+  static const String continueWithFacebook = "Continue with Facebook";
 }

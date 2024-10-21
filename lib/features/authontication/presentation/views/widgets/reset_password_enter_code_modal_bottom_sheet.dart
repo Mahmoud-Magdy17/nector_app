@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nector_app/core/utils/app_colors.dart';
 import 'package:nector_app/core/utils/app_strings.dart';
 import 'package:nector_app/core/utils/app_style.dart';
-import 'package:nector_app/core/widgets/custom_button.dart';
+import 'package:nector_app/core/widgets/custom_text_button.dart';
 import 'package:nector_app/features/authontication/presentation/views/widgets/code_field.dart';
 import 'package:nector_app/features/authontication/presentation/views/widgets/custom_reset_password_buttom.dart';
 import 'package:nector_app/features/authontication/presentation/views/widgets/reset_password_new_email_bottom_sheet.dart';
@@ -30,7 +30,7 @@ class ResetPasswordEnterCodeModalBottomSheet extends StatelessWidget {
           const SizedBox(
             height: 64,
           ),
-          CustomButton(
+          CustomTextButton(
             text: AppStrings.sendCode,
             onPressed: () {
               Navigator.pop(context);

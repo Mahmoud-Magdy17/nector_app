@@ -6,7 +6,7 @@ import 'package:nector_app/core/utils/app_colors.dart';
 import 'package:nector_app/core/utils/app_functions.dart';
 import 'package:nector_app/core/utils/app_strings.dart';
 import 'package:nector_app/core/utils/app_style.dart';
-import 'package:nector_app/core/widgets/custom_button.dart';
+import 'package:nector_app/core/widgets/custom_text_button.dart';
 
 class OnboardingViewBody extends StatelessWidget {
   const OnboardingViewBody({
@@ -50,7 +50,7 @@ class OnboardingViewBody extends StatelessWidget {
         ),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 30),
-          child: CustomButton(
+          child: CustomTextButton(
             text: AppStrings.getStarted,
             onPressed: () {
               navigationPushReplacement(

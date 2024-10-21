@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nector_app/core/router/app_router.dart';
 import 'package:nector_app/core/utils/app_functions.dart';
 import 'package:nector_app/core/utils/app_strings.dart';
-import 'package:nector_app/core/widgets/custom_button.dart';
+import 'package:nector_app/core/widgets/custom_text_button.dart';
 import 'package:nector_app/features/authontication/presentation/views/widgets/authontication_view_header.dart';
 import 'package:nector_app/features/authontication/presentation/views/widgets/custom_email_form_field.dart';
 import 'package:nector_app/features/authontication/presentation/views/widgets/custom_password_form_field.dart';
@@ -47,7 +47,9 @@ class SignUpViewBody extends StatelessWidget {
             const SizedBox(
               height: 30,
             ),
-            CustomButton(text: AppStrings.signUp, onPressed: () {}),
+            CustomTextButton(text: AppStrings.signUp, onPressed: () {
+              navigationPush(context, AppRouter.routes[AppRouter.singupDataCollectMethodView]);
+            }),
             const SizedBox(
               height: 25,
             ),

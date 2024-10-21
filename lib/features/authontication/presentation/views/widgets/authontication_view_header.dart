@@ -13,30 +13,34 @@ class AuthonticationViewsHeader extends StatelessWidget {
   final String subTitle;
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Container(
-          padding: const EdgeInsets.only( bottom: 70),
-          alignment: Alignment.center,
-          width: MediaQuery.of(context).size.width,
-          child: Image.asset(
-            AppAssets.carrot,
-            scale: 3.5,
+    return 
+    SizedBox(
+      height: 224,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            padding: const EdgeInsets.only( bottom: 70),
+            alignment: Alignment.center,
+            width: MediaQuery.of(context).size.width,
+            child: Image.asset(
+              AppAssets.carrot,
+              scale: 3.5,
+            ),
           ),
-        ),
-        Text(
-          title,
-          style: AppTextStyle.gilroy26px600
-              .copyWith(color: const Color(0xff181725)),
-        ),
-        Text(
-          subTitle,
-          style: AppTextStyle.gilroy16px500.copyWith(
-            color: AppColors.grey,
+          Text(
+            title,
+            style: AppTextStyle.gilroy26px600
+                .copyWith(color: const Color(0xff181725)),
           ),
-        ),
-      ],
+          Text(
+            subTitle,
+            style: AppTextStyle.gilroy16px500.copyWith(
+              color: AppColors.grey,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

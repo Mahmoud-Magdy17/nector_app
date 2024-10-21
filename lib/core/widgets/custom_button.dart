@@ -12,17 +12,20 @@ class CustomButton extends StatelessWidget {
   final String text;
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      onPressed: onPressed,
-      style: ElevatedButton.styleFrom(
-        backgroundColor: AppColors.primaryColor,
-        fixedSize: const Size(double.maxFinite, 67),
-      ),
-      child: Text(
-        text,
-        style: AppTextStyle.gilroy26px600.copyWith(
-          fontSize: 18,
-          color: AppColors.white,
+    return SizedBox(
+      height: 56,
+      child: ElevatedButton(
+        onPressed: onPressed,
+        style: ElevatedButton.styleFrom(
+          backgroundColor: AppColors.primaryColor,
+          fixedSize: const Size(double.maxFinite, 67),
+        ),
+        child: Text(
+          text,
+          style: AppTextStyle.gilroy26px600.copyWith(
+            fontSize: 18,
+            color: AppColors.white,
+          ),
         ),
       ),
     );

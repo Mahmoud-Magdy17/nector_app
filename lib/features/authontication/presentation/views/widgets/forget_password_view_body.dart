@@ -15,7 +15,7 @@ class ForgetPasswordViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 15.0),
-      child: Column(
+      child: ListView(
         children: [
           const AuthonticationViewsHeader(
             title: AppStrings.forgetPassword,

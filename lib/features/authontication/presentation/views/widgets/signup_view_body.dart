@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:nector_app/core/router/app_router.dart';
+import 'package:nector_app/core/utils/app_functions.dart';
 import 'package:nector_app/core/utils/app_strings.dart';
 import 'package:nector_app/core/widgets/custom_button.dart';
 import 'package:nector_app/features/authontication/presentation/views/widgets/authontication_view_header.dart';
@@ -52,7 +54,9 @@ class SignUpViewBody extends StatelessWidget {
             OtherAuthenticationActoins(
               text: AppStrings.alreadyHaveAnAccount,
               action: AppStrings.logIn,
-              onPressed: () {},
+              onPressed: () {
+                navigationPushReplacement(context, AppRouter.routes[AppRouter.loginView]);
+              },
             )
           ],
         ),

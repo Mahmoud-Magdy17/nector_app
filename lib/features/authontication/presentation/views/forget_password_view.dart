@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:nector_app/core/widgets/custom_back_button.dart';
 import 'package:nector_app/features/authontication/presentation/views/widgets/custom_scaffold.dart';
 
@@ -18,8 +19,7 @@ class ForgetPasswordView extends StatelessWidget {
             CustomAppBar(
               leading: CustomBackButton(),
             ),
-            
-            ForgetPasswordViewBody(),
+            Expanded(child: ForgetPasswordViewBody()),
           ],
         ),
       )),

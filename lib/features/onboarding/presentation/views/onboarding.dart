@@ -19,8 +19,11 @@ class OnBoarding extends StatelessWidget {
         ),
         child: const Column(
           children: [
-            Spacer(),
-            OnboardingViewBody(),
+            Spacer(flex: 1,),
+            Expanded(
+              flex: 2,
+              child: OnboardingViewBody(),
+            ),
           ],
         ),
       ),

@@ -37,6 +37,9 @@ dependencies:
   font_awesome_flutter: ^10.7.0
   easy_splash: ^0.0.6
   phonenumber_input: ^0.0.3
+  bloc: ^8.1.4
+  flutter_bloc: ^8.1.6
+  
 
 dev_dependencies:
   flutter_test:

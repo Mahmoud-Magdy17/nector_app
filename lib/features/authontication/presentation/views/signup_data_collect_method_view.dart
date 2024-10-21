@@ -9,23 +9,25 @@ class SignupDataCollectMethodView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Container(
-            height: (MediaQuery.of(context).size.height * 1) / 3,
-            width: double.infinity,
-            decoration: const BoxDecoration(
-              image: DecorationImage(
-                fit: BoxFit.cover,
-                image: AssetImage(AppAssets.imageSignIn),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container(
+              height: (MediaQuery.of(context).size.height * 1) / 3,
+              width: double.infinity,
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                  fit: BoxFit.cover,
+                  image: AssetImage(AppAssets.imageSignIn),
+                ),
               ),
             ),
-          ),
-          SizedBox(
-            height: (MediaQuery.of(context).size.height * 2) / 3,
-            child: const SignupDataCollectMethodViewBody(),
-          ),
-        ],
+            SizedBox(
+              height: (MediaQuery.of(context).size.height * 2) / 3,
+              child: const SignupDataCollectMethodViewBody(),
+            ),
+          ],
+        ),
       ),
     );
   }

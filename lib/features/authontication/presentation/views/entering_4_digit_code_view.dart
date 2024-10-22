@@ -1,7 +1,4 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:nector_app/core/utils/app_colors.dart';
@@ -10,6 +7,7 @@ import 'package:nector_app/features/authontication/presentation/cubit/cubit/auth
 import 'package:nector_app/features/authontication/presentation/views/widgets/custom_scaffold.dart';
 
 import 'widgets/custom_app_bar.dart';
+import 'widgets/entering_4_digit_code_view_body.dart';
 
 class Entering4DigitCodeView extends StatelessWidget {
   const Entering4DigitCodeView({super.key});
@@ -37,6 +35,7 @@ class Entering4DigitCodeView extends StatelessWidget {
                 leading: CustomBackButton(),
               ),
             ),
+            Entering4DigitCodeViewBody(),
           ],
         ),
       ),

@@ -27,9 +27,9 @@ class CustomResetPasswordBottomSheet extends StatelessWidget {
         right: 16,
         bottom: MediaQuery.of(context).viewInsets.bottom + 4,
       ),
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: AppColors.white,
-        borderRadius: const BorderRadius.only(
+        borderRadius: BorderRadius.only(
           topLeft: Radius.circular(30),
           topRight: Radius.circular(30),
         ),

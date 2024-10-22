@@ -6,8 +6,10 @@ class CustomEmailFormField extends StatelessWidget {
   const CustomEmailFormField({
     super.key,
     required this.label,
+    this.hint = "",
   });
   final String label;
+  final String hint;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -23,9 +25,14 @@ class CustomEmailFormField extends StatelessWidget {
           TextFormField(
             decoration: InputDecoration(
               enabledBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(color: AppColors.grey.withOpacity(0.4))),
+                  borderSide:
+                      BorderSide(color: AppColors.grey.withOpacity(0.4))),
               focusedBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(color: AppColors.grey.withOpacity(0.4))),
+                  borderSide:
+                      BorderSide(color: AppColors.grey.withOpacity(0.4))),
+              hintText: hint,
+              hintStyle: AppTextStyle.gilroy26px600
+                  .copyWith(fontSize: 16, color: AppColors.grey),
             ),
           ),
         ],

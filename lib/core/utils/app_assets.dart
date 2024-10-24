@@ -5,4 +5,5 @@ class AppAssets {
   static const String backGround = "assets/images/Background.jpg";
   static const String resetPasswordDone = "assets/images/reset_password_done.png";
   static const String imageSignIn = 'assets/images/image_signin.png';
+  static const String location = 'assets/images/location.png';
 }

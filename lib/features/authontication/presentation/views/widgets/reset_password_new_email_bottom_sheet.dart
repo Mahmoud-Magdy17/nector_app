@@ -18,9 +18,7 @@ class ResetPasswordNewEmailBottomSheet extends StatelessWidget {
       subTitle: AppStrings.enterNewPassword,
       child: Column(
         children: [
-          const CustomEmailFormField(
-            label: AppStrings.email,
-          ),
+          const CustomEmailFormField(),
           const SizedBox(
             height: 20,
           ),

@@ -3,8 +3,10 @@ import 'package:nector_app/features/authontication/presentation/views/forget_pas
 import 'package:nector_app/features/authontication/presentation/views/login_view.dart';
 import 'package:nector_app/features/authontication/presentation/views/phone_number_entering_view.dart';
 import 'package:nector_app/features/authontication/presentation/views/reset_password_done_view.dart';
+import 'package:nector_app/features/authontication/presentation/views/select_location_view.dart';
 import 'package:nector_app/features/authontication/presentation/views/signup_data_collect_method_view.dart';
 import 'package:nector_app/features/authontication/presentation/views/signup_view.dart';
+import 'package:nector_app/features/home/presentation/views/home_view.dart';
 import 'package:nector_app/features/onboarding/presentation/views/onboarding.dart';
 import 'package:nector_app/features/splash/presentation/views/spash_view.dart';
 
@@ -18,6 +20,9 @@ class AppRouter {
   static String singupDataCollectMethodView = '/singupDataCollectMethodView';
   static String phoneNumberEnteringView = "/phoneNumberEnteringView";
   static String entering4DigitCodeView = "/entering4DigitCodeView";
+  static String selectLocationView = "/selectLocationView";
+
+  static String homeView = "/homeView";
 
   static Map<String, dynamic> routes = {
     splashView: const SplashView(),
@@ -29,5 +34,7 @@ class AppRouter {
     singupDataCollectMethodView: const SignupDataCollectMethodView(),
     phoneNumberEnteringView: const PhoneNumberEnteringView(),
     entering4DigitCodeView: const Entering4DigitCodeView(),
+    selectLocationView: const SelectLocationView(),
+    homeView: const HomeView(),
   };
 }

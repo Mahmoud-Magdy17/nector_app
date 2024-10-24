@@ -35,7 +35,7 @@ class SignUpViewBody extends StatelessWidget {
             const SizedBox(
               height: 30,
             ),
-            const CustomEmailFormField(label: AppStrings.email),
+            const CustomEmailFormField(),
             const SizedBox(
               height: 30,
             ),

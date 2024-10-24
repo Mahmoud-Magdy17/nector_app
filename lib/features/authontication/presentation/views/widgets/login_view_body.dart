@@ -20,7 +20,7 @@ class LoginViewBody extends StatelessWidget {
         const SizedBox(
           height: 40,
         ),
-        const CustomEmailFormField(label: AppStrings.logIn),
+        const CustomEmailFormField(),
         const SizedBox(
           height: 30,
         ),

@@ -24,7 +24,7 @@ class ForgetPasswordViewBody extends StatelessWidget {
           const SizedBox(
             height: 44,
           ),
-          const CustomEmailFormField(label: AppStrings.email),
+          const CustomEmailFormField(),
           const SizedBox(
             height: 63,
           ),

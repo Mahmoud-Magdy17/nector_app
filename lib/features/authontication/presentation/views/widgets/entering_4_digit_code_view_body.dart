@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nector_app/core/utils/app_colors.dart';
 import 'package:nector_app/core/utils/app_strings.dart';
 import 'package:nector_app/core/utils/app_style.dart';
-import 'package:nector_app/features/authontication/presentation/views/widgets/custom_email_form_field.dart';
+import 'package:nector_app/features/authontication/presentation/views/widgets/custom_four_digits_code_form_field.dart';
 
 class Entering4DigitCodeViewBody extends StatelessWidget {
   const Entering4DigitCodeViewBody({super.key});
@@ -25,10 +25,7 @@ class Entering4DigitCodeViewBody extends StatelessWidget {
             const SizedBox(
               height: 25,
             ),
-            const CustomEmailFormField(
-              label: AppStrings.code,
-              hint: "----",
-            ),
+            const CustomFourDigitsCodeFormField(),
             const Spacer(),
             TextButton(
               onPressed: () {},

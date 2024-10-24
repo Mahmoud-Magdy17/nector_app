@@ -17,10 +17,9 @@ class PhoneNumberEnteringViewBody extends StatefulWidget {
 
 class _PhoneNumberEnteringViewBodyState
     extends State<PhoneNumberEnteringViewBody> {
-
   @override
   Widget build(BuildContext context) {
-    dynamic cubit = context.read<AuthonticationCubit>();
+    var cubit = context.read<AuthonticationCubit>();
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Column(

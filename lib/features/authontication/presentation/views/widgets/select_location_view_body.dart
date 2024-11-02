@@ -8,7 +8,7 @@ import 'package:nector_app/core/router/app_router.dart';
 import 'package:nector_app/core/utils/app_functions.dart';
 import 'package:nector_app/core/utils/app_strings.dart';
 import 'package:nector_app/core/widgets/custom_text_button.dart';
-import 'package:nector_app/features/authontication/presentation/cubit/cubit/authontication_cubit.dart';
+import 'package:nector_app/features/authontication/presentation/manager/authontication_cubit/authontication_cubit.dart';
 
 import 'custom_location_drop_down_menu_field.dart';
 import 'select_location_header.dart';

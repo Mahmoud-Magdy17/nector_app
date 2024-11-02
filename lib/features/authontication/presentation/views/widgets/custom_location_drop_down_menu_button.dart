@@ -5,7 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:nector_app/constants.dart';
 import 'package:nector_app/core/utils/app_style.dart';
 
-import '../../cubit/cubit/authontication_cubit.dart';
+import '../../manager/authontication_cubit/authontication_cubit.dart';
 
 class CustomLocationDropDownMenuButton extends StatelessWidget {
   const CustomLocationDropDownMenuButton({

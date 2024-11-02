@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:nector_app/core/utils/app_strings.dart';
 import 'package:nector_app/core/utils/app_style.dart';
-import 'package:nector_app/features/authontication/presentation/cubit/cubit/authontication_cubit.dart';
+import 'package:nector_app/features/authontication/presentation/manager/authontication_cubit/authontication_cubit.dart';
 import 'package:phonenumber_input/phonenumber_input.dart';
 
 class PhoneNumberEnteringViewBody extends StatefulWidget {

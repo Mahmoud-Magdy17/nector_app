@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:nector_app/core/utils/app_colors.dart';
 import 'package:nector_app/core/utils/app_strings.dart';
 import 'package:nector_app/core/utils/app_style.dart';
-import 'package:nector_app/features/authontication/presentation/cubit/cubit/authontication_cubit.dart';
+import 'package:nector_app/features/authontication/presentation/manager/authontication_cubit/authontication_cubit.dart';
 
 class CustomFourDigitsCodeFormField extends StatelessWidget {
   const CustomFourDigitsCodeFormField({

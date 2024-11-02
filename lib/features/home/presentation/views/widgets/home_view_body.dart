@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'custom_home_view_appbar.dart';
 import 'custom_slider.dart';
 import 'custom_sliver_appbar.dart';
+import 'custom_sliver_sized_box.dart';
+import 'custom_titled_listview.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -15,8 +17,15 @@ class HomeViewBody extends StatelessWidget {
           child: CustomMainHomeViewAppBar(),
         ),
         const CustomSliverAppBar(),
+        const CustomSliverSizedBox(
+          height: 8,
+        ),
         const SliverToBoxAdapter(
           child: CustomSlider(),
+        ),
+        const CustomSliverSizedBox(height: 30),
+        const SliverToBoxAdapter(
+          child: CustomTitledListView(),
         ),
         SliverList(
           delegate: SliverChildBuilderDelegate(
@@ -33,4 +42,3 @@ class HomeViewBody extends StatelessWidget {
     );
   }
 }
-

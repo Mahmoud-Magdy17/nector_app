@@ -20,10 +20,10 @@ class OnboardingViewBody extends StatelessWidget {
         Icon(
           FontAwesomeIcons.carrot,
           color: AppColors.white,
-          size: MediaQuery.of(context).size.width/6,
+          size: MediaQuery.of(context).size.width / 6,
         ),
         SizedBox(
-          height: MediaQuery.of(context).size.height/8/10,
+          height: MediaQuery.of(context).size.height / 8 / 10,
         ),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 60.5),
@@ -42,11 +42,11 @@ class OnboardingViewBody extends StatelessWidget {
         Text(
           AppStrings.getYourGroceriesFast,
           style: AppTextStyle.gilroy16px500.copyWith(
-            color: const Color(0xfffcfcfcb2).withOpacity(0.7),
+            color: AppColors.offWhite.withOpacity(0.7),
           ),
         ),
         SizedBox(
-          height: MediaQuery.of(context).size.height/8,
+          height: MediaQuery.of(context).size.height / 8,
         ),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 30),

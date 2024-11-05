@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'custom_element_card.dart';
 import 'custom_home_view_appbar.dart';
 import 'custom_slider.dart';
 import 'custom_sliver_appbar.dart';
@@ -25,7 +26,29 @@ class HomeViewBody extends StatelessWidget {
         ),
         const CustomSliverSizedBox(height: 30),
         const SliverToBoxAdapter(
-          child: CustomTitledListView(),
+          child: CustomTitledListView(
+            title: "Exclusive Offer",
+            cards: [
+              CustomElementCard(),
+              CustomElementCard(),
+              CustomElementCard(),
+              CustomElementCard(),
+              CustomElementCard(),
+            ],
+          ),
+        ),
+        const CustomSliverSizedBox(height: 30),
+        const SliverToBoxAdapter(
+          child: CustomTitledListView(
+            title: "Best Selling",
+            cards: [
+              CustomElementCard(),
+              CustomElementCard(),
+              CustomElementCard(),
+              CustomElementCard(),
+              CustomElementCard(),
+            ],
+          ),
         ),
         SliverList(
           delegate: SliverChildBuilderDelegate(

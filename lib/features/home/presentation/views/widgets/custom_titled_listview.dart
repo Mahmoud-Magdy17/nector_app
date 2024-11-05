@@ -1,48 +1,30 @@
-
 import 'package:flutter/material.dart';
-import 'package:nector_app/core/utils/app_style.dart';
+import 'package:nector_app/features/home/presentation/views/widgets/custom_card_header.dart';
+
+import 'custom_element_card.dart';
+import 'custom_titled_listview_body.dart';
 
 class CustomTitledListView extends StatelessWidget {
   const CustomTitledListView({
     super.key,
+    required this.title,
+    required this.cards,
   });
-
+  final String title;
+  final List<CustomElementCard> cards;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.height / 4,
+      height: MediaQuery.of(context).size.height / 2.65,
       child: Column(
         children: [
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 25.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  "Exclusive Offer",
-                  style:
-                      AppTextStyle.gilroy28px800.copyWith(fontSize: 20),
-                ),
-                TextButton(
-                  style: TextButton.styleFrom(
-                    padding: const EdgeInsets.all(
-                      0,
-                    ),
-                  ),
-                  onPressed: () {},
-                  child: Text(
-                    "See all",
-                    style:
-                        AppTextStyle.gilroy26px600.copyWith(fontSize: 16),
-                  ),
-                ),
-              ],
-            ),
+            child: CustomTiltedListViewHeader(title: title),
           ),
           Expanded(
-              child: Container(
-            color: Colors.amber,
-          )),
+            child: CustomTitledListViewBody(cards: cards),
+          ),
         ],
       ),
     );

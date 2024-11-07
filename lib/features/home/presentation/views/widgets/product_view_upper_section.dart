@@ -1,0 +1,51 @@
+
+
+import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+class PruductViewUpperSection extends StatelessWidget {
+  const PruductViewUpperSection({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.only(bottom: 16),
+      height: MediaQuery.of(context).size.height / 2.6,
+      alignment: Alignment.bottomCenter,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.only(
+          bottomLeft: Radius.circular(25),
+          bottomRight: Radius.circular(25),
+        ),
+        color: Color(0xffF2F3F2),
+      ),
+      child: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(FontAwesomeIcons.angleLeft),
+                  color: Colors.black,
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(FontAwesomeIcons.arrowUpFromBracket),
+                  color: Colors.black,
+                ),
+              ],
+            ),
+            Image.network(
+              'https://th.bing.com/th/id/OIP.UYagQDMo7CCbBLXOPB5etAHaHa?rs=1&pid=ImgDetMain',
+              height: MediaQuery.of(context).size.height / 4.2,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}

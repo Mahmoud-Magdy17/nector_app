@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:nector_app/features/authontication/presentation/manager/authontication_cubit/authontication_cubit.dart';
+import 'package:nector_app/features/home/presentation/views/product_details_view.dart';
 
 import 'features/home/presentation/views/home_view.dart';
 
@@ -18,7 +19,7 @@ class NectorApp extends StatelessWidget {
       child: const MaterialApp(
         debugShowCheckedModeBanner: false,
         // home: AppRouter.routes[AppRouter.splashView],
-        home: HomeView(),
+        home: ProductDetailsView(),
       ),
     );
   }

@@ -13,18 +13,21 @@ class CustomTitledListViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.separated(
-      physics: const BouncingScrollPhysics(),
-      scrollDirection: Axis.horizontal,
-      itemCount: cards.length,
-      itemBuilder: (context, index) {
-        return cards[index];
-      },
-      separatorBuilder: (context, index) {
-        return const SizedBox(
-          width: 16,
-        );
-      },
+    return SizedBox(
+      height: 120,
+      child: ListView.separated(
+        physics: const BouncingScrollPhysics(),
+        scrollDirection: Axis.horizontal,
+        itemCount: cards.length,
+        itemBuilder: (context, index) {
+          return cards[index];
+        },
+        separatorBuilder: (context, index) {
+          return const SizedBox(
+            width: 16,
+          );
+        },
+      ),
     );
   }
 }

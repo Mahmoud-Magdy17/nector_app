@@ -26,7 +26,7 @@ class CounterInputNumbersField extends StatelessWidget {
           FilteringTextInputFormatter.digitsOnly,
         ],
         keyboardType: TextInputType.number,
-        decoration: InputDecoration(
+        decoration: const InputDecoration(
           
           enabledBorder: UnderlineInputBorder(
             borderSide: BorderSide.none,

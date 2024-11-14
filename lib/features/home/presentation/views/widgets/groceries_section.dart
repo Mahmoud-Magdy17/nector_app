@@ -15,18 +15,18 @@ class GroceriesSection extends StatelessWidget {
     return  SliverToBoxAdapter(
       child: Column(
         children: [
-          GroceriesListViewHeader(), //32
-          SizedBox(
+          const GroceriesListViewHeader(), //32
+          const SizedBox(
             height: 16,
           ),
-          GroceriesListView(),
-          SizedBox(
+          const GroceriesListView(),
+          const SizedBox(
             height: 8,
           ),
 
           SizedBox(
             height: MediaQuery.of(context).size.height / 3.2,
-            child: CustomTitledListViewBody(
+            child: const CustomTitledListViewBody(
               cards: [
                 CustomElementCard(),
                 CustomElementCard(),

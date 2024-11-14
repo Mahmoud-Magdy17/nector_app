@@ -11,10 +11,10 @@ class PruductViewUpperSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(bottom: 16),
+      padding: const EdgeInsets.only(bottom: 16),
       height: MediaQuery.of(context).size.height / 2.6,
       alignment: Alignment.bottomCenter,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(25),
           bottomRight: Radius.circular(25),
@@ -28,13 +28,15 @@ class PruductViewUpperSection extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 IconButton(
-                  onPressed: () {},
-                  icon: Icon(FontAwesomeIcons.angleLeft),
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  icon: const Icon(FontAwesomeIcons.angleLeft),
                   color: Colors.black,
                 ),
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(FontAwesomeIcons.arrowUpFromBracket),
+                  icon: const Icon(FontAwesomeIcons.arrowUpFromBracket),
                   color: Colors.black,
                 ),
               ],

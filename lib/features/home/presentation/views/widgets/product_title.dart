@@ -18,13 +18,13 @@ class ProductTitle extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Title',
+              'Naturel Red Apple',
               style: AppTextStyle.gilroy28px800.copyWith(
                 fontSize: 20,
               ),
             ),
             Text(
-              'Sub title',
+              '1kg, Price',
               style: AppTextStyle.gilroy16px500
                   .copyWith(color: AppColors.grey, fontSize: 18),
             ),
@@ -32,8 +32,8 @@ class ProductTitle extends StatelessWidget {
         ),
         IconButton(
           onPressed: () {},
-          icon: Icon(FontAwesomeIcons.heart),
-          padding: EdgeInsets.all(0),
+          icon: const Icon(FontAwesomeIcons.heart),
+          padding: const EdgeInsets.all(0),
         )
       ],
     );

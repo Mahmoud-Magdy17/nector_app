@@ -18,7 +18,7 @@ class ProductViewBuyingNumber extends StatelessWidget {
           children: [
             IconButton(
                 onPressed: () {}, icon: const Icon(FontAwesomeIcons.minus)),
-            CounterInputNumbersField(),
+            const CounterInputNumbersField(),
             IconButton(
                 onPressed: () {}, icon: const Icon(FontAwesomeIcons.plus)),
           ],

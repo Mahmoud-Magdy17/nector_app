@@ -1,6 +1,7 @@
-
 import 'package:flutter/material.dart';
+import 'package:nector_app/core/router/app_router.dart';
 import 'package:nector_app/core/utils/app_colors.dart';
+import 'package:nector_app/core/utils/app_functions.dart';
 import 'package:nector_app/core/utils/app_style.dart';
 
 import 'custom_add_action_button.dart';
@@ -55,7 +56,11 @@ class CustomElementCard extends StatelessWidget {
                 "\$${4.99}",
                 style: AppTextStyle.gilroy26px600.copyWith(fontSize: 22),
               ),
-              const CustomAddActionButton(),
+              CustomAddActionButton(
+                onPressed: () {
+                  navigationPush(context, AppRouter.routes[AppRouter.productDetailsView]);
+                },
+              ),
             ],
           ),
         ],

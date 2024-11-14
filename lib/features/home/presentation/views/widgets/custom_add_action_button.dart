@@ -1,16 +1,16 @@
-
 import 'package:flutter/material.dart';
 import 'package:nector_app/core/utils/app_colors.dart';
 
 class CustomAddActionButton extends StatelessWidget {
   const CustomAddActionButton({
     super.key,
+    required this.onPressed,
   });
-
+  final Function() onPressed;
   @override
   Widget build(BuildContext context) {
     return IconButton(
-      onPressed: () {},
+      onPressed: onPressed,
       style: IconButton.styleFrom(
         backgroundColor: AppColors.primaryColor,
         foregroundColor: AppColors.white,

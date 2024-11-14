@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nector_app/core/utils/app_colors.dart';
 
-import 'custom_text_field.dart';
+import '../../features/home/presentation/views/widgets/custom_text_field.dart';
 
 class CustomDecoratedSearchTextField extends StatelessWidget {
   const CustomDecoratedSearchTextField({

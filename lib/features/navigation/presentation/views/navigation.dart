@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nector_app/features/explore_feature/presentation/views/explore_view.dart';
 import 'package:nector_app/features/home/presentation/views/home_view.dart';
 
 class NavigationView extends StatefulWidget {
@@ -12,7 +13,7 @@ class _NavigationViewState extends State<NavigationView> {
   int currentView = 0;
   var views = [
     const HomeView(),
-    const HomeView(),
+    const ExploreView(),
     const HomeView(),
     const HomeView(),
     const HomeView(),

@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:nector_app/core/utils/app_style.dart';
 
-import 'custom_decorated_text_field.dart';
+import '../../../../../core/widgets/custom_decorated_search_text_field.dart';
 
 class CustomSliverAppBar extends StatelessWidget {
   const CustomSliverAppBar({

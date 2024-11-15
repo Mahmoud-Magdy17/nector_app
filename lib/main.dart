@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:nector_app/features/authontication/presentation/manager/authontication_cubit/authontication_cubit.dart';
 import 'package:nector_app/features/navigation/presentation/views/navigation.dart';
 
-import 'features/home/presentation/views/home_view.dart';
 
 
 void main() {

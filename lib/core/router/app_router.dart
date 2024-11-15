@@ -6,6 +6,7 @@ import 'package:nector_app/features/authontication/presentation/views/reset_pass
 import 'package:nector_app/features/authontication/presentation/views/select_location_view.dart';
 import 'package:nector_app/features/authontication/presentation/views/signup_data_collect_method_view.dart';
 import 'package:nector_app/features/authontication/presentation/views/signup_view.dart';
+import 'package:nector_app/features/explore_feature/presentation/views/category_view.dart';
 import 'package:nector_app/features/home/presentation/views/home_view.dart';
 import 'package:nector_app/features/home/presentation/views/product_details_view.dart';
 import 'package:nector_app/features/onboarding/presentation/views/onboarding.dart';
@@ -23,6 +24,7 @@ class AppRouter {
   static String entering4DigitCodeView = "/entering4DigitCodeView";
   static String selectLocationView = "/selectLocationView";
   static String productDetailsView = "/productDetailsView";
+  static String categoryView = "/categoryView";
 
   static String homeView = "/homeView";
 
@@ -39,5 +41,6 @@ class AppRouter {
     selectLocationView: const SelectLocationView(),
     homeView: const HomeView(),
     productDetailsView: const ProductDetailsView(),
+    categoryView:const CategoryView()
   };
 }

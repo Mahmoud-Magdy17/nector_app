@@ -7,6 +7,7 @@ import 'package:nector_app/features/authontication/presentation/views/select_loc
 import 'package:nector_app/features/authontication/presentation/views/signup_data_collect_method_view.dart';
 import 'package:nector_app/features/authontication/presentation/views/signup_view.dart';
 import 'package:nector_app/features/explore_feature/presentation/views/category_view.dart';
+import 'package:nector_app/features/explore_feature/presentation/views/filters_view.dart';
 import 'package:nector_app/features/home/presentation/views/home_view.dart';
 import 'package:nector_app/features/home/presentation/views/product_details_view.dart';
 import 'package:nector_app/features/navigation/presentation/views/navigation.dart';
@@ -27,6 +28,7 @@ class AppRouter {
   static String productDetailsView = "/productDetailsView";
   static String categoryView = "/categoryView";
   static String navigationView = "/navigationView";
+  static String filters = "/filters";
 
   static String homeView = "/homeView";
 
@@ -45,6 +47,7 @@ class AppRouter {
     productDetailsView: const ProductDetailsView(),
     categoryView:const CategoryView(),
     navigationView:const NavigationView(),
+    filters:const FiltersView(),
 
   };
 }

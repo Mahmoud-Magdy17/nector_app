@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nector_app/core/widgets/custom_appbar.dart';
 import 'package:nector_app/core/widgets/custom_appbar_title.dart';
 import 'package:nector_app/core/widgets/custom_back_button.dart';
-import 'package:nector_app/core/widgets/filters_butten.dart';
+import 'package:nector_app/core/widgets/custom_navigation_filters_button.dart';
 import 'package:nector_app/features/explore_feature/presentation/views/widgets/category_view_body.dart';
 
 class CategoryView extends StatelessWidget {
@@ -18,7 +18,7 @@ class CategoryView extends StatelessWidget {
           children: [
             CustomAppBar(
               leading: const CustomBackButton(),
-              actions: const FiltersButton(),
+              actions: const CustomNavigationFiltersButton(),
               child: CustomAppBarTitle(title: categoryName),
             ),
             const CategoryViewBody()

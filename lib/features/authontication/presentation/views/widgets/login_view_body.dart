@@ -34,7 +34,7 @@ class LoginViewBody extends StatelessWidget {
           onPressed: () {
             navigationPushReplacement(
               context,
-              AppRouter.routes[AppRouter.homeView],
+              AppRouter.routes[AppRouter.navigationView],
             );
           },
         ),

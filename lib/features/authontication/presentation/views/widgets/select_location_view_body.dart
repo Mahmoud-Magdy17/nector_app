@@ -39,7 +39,7 @@ class SelectLocationViewBody extends StatelessWidget {
                 log(cubit.fourDigitsCode);
                 log(cubit.location);
                 Navigator.popUntil(context, ModalRoute.withName('/'));
-                navigationPush(context, AppRouter.routes[AppRouter.homeView]);
+                navigationPush(context, AppRouter.routes[AppRouter.navigationView]);
               },
             ),
           ],

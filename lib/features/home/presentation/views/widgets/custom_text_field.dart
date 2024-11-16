@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:nector_app/core/utils/app_style.dart';
@@ -6,11 +5,13 @@ import 'package:nector_app/core/utils/app_style.dart';
 class SearchTextField extends StatelessWidget {
   const SearchTextField({
     super.key,
+    required this.onChanged,
   });
-
+  final void Function(String) onChanged;
   @override
   Widget build(BuildContext context) {
     return TextField(
+      onChanged: onChanged,
       textAlignVertical: TextAlignVertical.center,
       decoration: InputDecoration(
         border: const UnderlineInputBorder(borderSide: BorderSide.none),

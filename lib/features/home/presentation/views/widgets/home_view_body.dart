@@ -15,7 +15,7 @@ class HomeViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: 25.0),
+      padding: const EdgeInsets.only(left: 25.0),
       child: CustomScrollView(
         slivers: [
           SliverToBoxAdapter(
@@ -26,19 +26,19 @@ class HomeViewBody extends StatelessWidget {
               ),
             ),
           ),
-          CustomSliverAppBar(),
-          CustomSliverSizedBox(
+          const CustomSliverAppBar(),
+          const CustomSliverSizedBox(
             height: 8,
           ),
-          SliverToBoxAdapter(
+          const SliverToBoxAdapter(
             child: CustomSlider(),
           ),
-          CustomSliverSizedBox(height: 30),
-          ExclusiveOffersSection(),
-          CustomSliverSizedBox(height: 30),
-          BestSellingSection(),
-          CustomSliverSizedBox(height: 30),
-          GroceriesSection(),
+          const CustomSliverSizedBox(height: 30),
+          const ExclusiveOffersSection(),
+          const CustomSliverSizedBox(height: 30),
+          const BestSellingSection(),
+          const CustomSliverSizedBox(height: 30),
+          const GroceriesSection(),
         ],
       ),
     );

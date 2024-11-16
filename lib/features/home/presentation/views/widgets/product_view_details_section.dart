@@ -15,20 +15,20 @@ class ProductViewDetailsSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 16.0),
+      padding: const EdgeInsets.symmetric(horizontal: 16.0),
       child: Column(
         children: [
-          ProductTitle(),
-          SizedBox(
+          const ProductTitle(),
+          const SizedBox(
             height: 30,
           ),
-          ProductViewBuyingNumber(),
-          SizedBox(
+          const ProductViewBuyingNumber(),
+          const SizedBox(
             height: 48,
           ),
-          ProductDetailsTile(),
-          NutrationTile(),
-          ReviewTile(),
+          const ProductDetailsTile(),
+          const NutrationTile(),
+          const ReviewTile(),
           CustomTextButton(text: 'Add To Backet', onPressed: () {})
         ],
       ),

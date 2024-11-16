@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:nector_app/core/utils/app_style.dart';
 import 'package:nector_app/core/widgets/custom_appbar.dart';
+import 'package:nector_app/core/widgets/custom_appbar_title.dart';
 import 'package:nector_app/features/home/presentation/views/widgets/custom_sliver_appbar.dart';
 
 import 'caterory_grid_item.dart';
@@ -15,18 +15,16 @@ class ExploreViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomScrollView(
+    return const CustomScrollView(
       slivers: [
         SliverToBoxAdapter(
           child: CustomAppBar(
-            child: Text(
-              "Find Product",
-              style: AppTextStyle.gilroy28px800.copyWith(fontSize: 20),
-            ),
+            child: CustomAppBarTitle(title: "Find Product"), 
+            
           ),
         ),
-        const CustomSliverAppBar(),
-        const CustomSliverGrid(
+        CustomSliverAppBar(),
+        CustomSliverGrid(
           children: [
             CateroyGridItem(),
             CateroyGridItem(),

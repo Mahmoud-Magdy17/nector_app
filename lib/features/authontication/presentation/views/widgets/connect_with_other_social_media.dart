@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nector_app/core/utils/app_colors.dart';
 import 'package:nector_app/core/utils/app_strings.dart';
 import 'package:nector_app/core/utils/app_style.dart';
-import 'package:nector_app/core/widgets/custom_icon_button.dart';
+import 'package:nector_app/core/widgets/custom_text_with_icon_button.dart';
 
 class ConnectWithOtherSocialMedia extends StatelessWidget {
   const ConnectWithOtherSocialMedia({
@@ -23,7 +23,7 @@ class ConnectWithOtherSocialMedia extends StatelessWidget {
         const SizedBox(
           height: 30,
         ),
-        CustomIconButton(
+        CustomTextWithIconButton(
           text: AppStrings.continueWithGoogle,
           onPressed: () {},
           color: const Color(0xff5383EC),
@@ -36,7 +36,7 @@ class ConnectWithOtherSocialMedia extends StatelessWidget {
         const SizedBox(
           height: 15,
         ),
-        CustomIconButton(
+        CustomTextWithIconButton(
           text: AppStrings.continueWithFacebook,
           onPressed: () {},
           color: const Color(0xff4A66AC),

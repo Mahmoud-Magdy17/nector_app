@@ -4,6 +4,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class CustomBackButton extends StatelessWidget {
   const CustomBackButton({super.key, this.icon = FontAwesomeIcons.angleLeft});
   final IconData icon;
+  
   @override
   Widget build(BuildContext context) {
     return IconButton(

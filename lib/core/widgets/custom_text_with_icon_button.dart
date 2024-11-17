@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:nector_app/core/utils/app_colors.dart';
 import 'package:nector_app/core/utils/app_style.dart';
 
-class CustomIconButton extends StatelessWidget {
-  const CustomIconButton({
+class CustomTextWithIconButton extends StatelessWidget {
+  const CustomTextWithIconButton({
     super.key,
     required this.text,
     required this.onPressed,

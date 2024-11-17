@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nector_app/features/explore/presentation/views/explore_view.dart';
 import 'package:nector_app/features/home/presentation/views/home_view.dart';
+import 'package:nector_app/features/my_cart/presentation/views/my_cart_view.dart';
 
 class NavigationView extends StatefulWidget {
   const NavigationView({super.key});
@@ -14,7 +15,7 @@ class _NavigationViewState extends State<NavigationView> {
   var views = [
     const HomeView(),
     const ExploreView(),
-    const HomeView(),
+    const MyCartView(),
     const HomeView(),
     const HomeView(),
   ];

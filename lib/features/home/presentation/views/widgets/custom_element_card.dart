@@ -4,7 +4,7 @@ import 'package:nector_app/core/utils/app_colors.dart';
 import 'package:nector_app/core/utils/app_functions.dart';
 import 'package:nector_app/core/utils/app_style.dart';
 
-import 'custom_add_action_button.dart';
+import '../../../../../core/widgets/custom_add_action_button.dart';
 
 class CustomElementCard extends StatelessWidget {
   const CustomElementCard({
@@ -56,10 +56,12 @@ class CustomElementCard extends StatelessWidget {
                 "\$${4.99}",
                 style: AppTextStyle.gilroy26px600.copyWith(fontSize: 22),
               ),
-              CustomAddActionButton(
+              CustomActionButton(
                 onPressed: () {
-                  navigationPush(context, AppRouter.routes[AppRouter.productDetailsView]);
+                  navigationPush(
+                      context, AppRouter.routes[AppRouter.productDetailsView]);
                 },
+                icon: Icons.add,
               ),
             ],
           ),

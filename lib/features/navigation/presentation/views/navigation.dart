@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nector_app/features/explore_feature/presentation/views/explore_view.dart';
+import 'package:nector_app/features/explore/presentation/views/explore_view.dart';
 import 'package:nector_app/features/home/presentation/views/home_view.dart';
 
 class NavigationView extends StatefulWidget {

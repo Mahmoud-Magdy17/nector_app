@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
-import 'package:nector_app/features/explore_feature/data/enums/filters_enum.dart';
-import 'package:nector_app/features/explore_feature/data/models/filter_models/filter.dart';
+import 'package:nector_app/features/explore/data/enums/filters_enum.dart';
+import 'package:nector_app/features/explore/data/models/filter_models/filter.dart';
 
 part 'check_state.dart';
 

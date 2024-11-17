@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nector_app/core/utils/app_style.dart';
-import 'package:nector_app/features/explore_feature/data/enums/filters_enum.dart';
+import 'package:nector_app/features/explore/data/enums/filters_enum.dart';
 
 import 'custom_check_box_item.dart';
 

@@ -6,8 +6,8 @@ import 'package:nector_app/features/authontication/presentation/views/reset_pass
 import 'package:nector_app/features/authontication/presentation/views/select_location_view.dart';
 import 'package:nector_app/features/authontication/presentation/views/signup_data_collect_method_view.dart';
 import 'package:nector_app/features/authontication/presentation/views/signup_view.dart';
-import 'package:nector_app/features/explore_feature/presentation/views/category_view.dart';
-import 'package:nector_app/features/explore_feature/presentation/views/filters_view.dart';
+import 'package:nector_app/features/explore/presentation/views/category_view.dart';
+import 'package:nector_app/features/explore/presentation/views/filters_view.dart';
 import 'package:nector_app/features/home/presentation/views/home_view.dart';
 import 'package:nector_app/features/home/presentation/views/product_details_view.dart';
 import 'package:nector_app/features/navigation/presentation/views/navigation.dart';

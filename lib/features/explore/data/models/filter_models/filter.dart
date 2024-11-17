@@ -1,4 +1,4 @@
-import 'package:nector_app/features/explore_feature/data/models/filter_models/category_filter.dart';
+import 'package:nector_app/features/explore/data/models/filter_models/category_filter.dart';
 
 import '../../enums/filters_enum.dart';
 import 'brand_filter.dart';

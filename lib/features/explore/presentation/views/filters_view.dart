@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:nector_app/core/widgets/custom_appbar.dart';
 import 'package:nector_app/core/widgets/custom_appbar_title.dart';
 import 'package:nector_app/core/widgets/custom_back_button.dart';
-import 'package:nector_app/features/explore_feature/presentation/cubits/check_cubit/check_cubit.dart';
+import 'package:nector_app/features/explore/presentation/cubits/check_cubit/check_cubit.dart';
 
 import 'widgets/filters_view_body.dart';
 

@@ -3,7 +3,7 @@ import 'package:nector_app/core/widgets/custom_appbar.dart';
 import 'package:nector_app/core/widgets/custom_appbar_title.dart';
 import 'package:nector_app/core/widgets/custom_back_button.dart';
 import 'package:nector_app/core/widgets/custom_navigation_filters_button.dart';
-import 'package:nector_app/features/explore_feature/presentation/views/widgets/category_view_body.dart';
+import 'package:nector_app/features/explore/presentation/views/widgets/category_view_body.dart';
 
 class CategoryView extends StatelessWidget {
   const CategoryView({super.key, this.categoryName = "Beverages"});

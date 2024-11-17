@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:nector_app/core/utils/app_colors.dart';
 import 'package:nector_app/core/utils/app_style.dart';
-import 'package:nector_app/features/explore_feature/presentation/cubits/check_cubit/check_cubit.dart';
+import 'package:nector_app/features/explore/presentation/cubits/check_cubit/check_cubit.dart';
 
 import '../../../data/enums/filters_enum.dart';
 

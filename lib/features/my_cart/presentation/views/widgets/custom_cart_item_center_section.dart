@@ -31,8 +31,8 @@ class CustomCartItemCenterSection extends StatelessWidget {
           maxLines: 1,
           overflow: TextOverflow.fade,
         ),
-        Spacer(),
-        CartItemCountingNumber(),
+        const Spacer(),
+        const CartItemCountingNumber(),
       ],
     );
   }

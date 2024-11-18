@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:nector_app/core/utils/app_colors.dart';
 import 'package:nector_app/core/utils/app_style.dart';
 
-import 'custom_expanded_tite.dart';
+import '../../../../../core/widgets/custom_expanded_tite.dart';
 
 class NutrationTile extends StatelessWidget {
   const NutrationTile({

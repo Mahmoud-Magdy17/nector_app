@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nector_app/core/utils/app_colors.dart';
 
-import 'custom_expanded_tite.dart';
+import '../../../../../core/widgets/custom_expanded_tite.dart';
 
 class ReviewTile extends StatelessWidget {
   const ReviewTile({

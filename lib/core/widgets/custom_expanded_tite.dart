@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:nector_app/core/utils/app_colors.dart';
 
+import 'expanded_listview_tile_label.dart';
+
 class CustomExpandedTile extends StatefulWidget {
   const CustomExpandedTile({
     super.key,
@@ -20,7 +22,7 @@ class _CustomExpandedTileState extends State<CustomExpandedTile> {
   int curState = 0;
   final List<Widget> leading = const [
     Icon(FontAwesomeIcons.angleRight),
-    Icon(FontAwesomeIcons.angleDown),
+    Icon(FontAwesomeIcons.angleDown, color: AppColors.primaryColor),
   ];
   @override
   Widget build(BuildContext context) {
@@ -49,7 +51,7 @@ class _CustomExpandedTileState extends State<CustomExpandedTile> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           widget.title,
-          widget.label ?? const SizedBox(),
+          ExpandedListTileLabel(curState: curState, label: widget.label,)
         ],
       ),
       children: widget.children,

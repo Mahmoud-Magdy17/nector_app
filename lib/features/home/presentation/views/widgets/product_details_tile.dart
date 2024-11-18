@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 
-import 'custom_expanded_tite.dart';
+import '../../../../../core/widgets/custom_expanded_tite.dart';
 
 class ProductDetailsTile extends StatelessWidget {
   const ProductDetailsTile({

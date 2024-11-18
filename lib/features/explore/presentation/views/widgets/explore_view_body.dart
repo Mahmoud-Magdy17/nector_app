@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:nector_app/core/widgets/custom_appbar.dart';
 import 'package:nector_app/core/widgets/custom_appbar_title.dart';
 import 'package:nector_app/features/home/presentation/views/widgets/custom_sliver_appbar.dart';

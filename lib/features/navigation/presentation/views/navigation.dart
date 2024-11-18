@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nector_app/features/explore/presentation/views/explore_view.dart';
+import 'package:nector_app/features/favorite/presentation/views/favorite_view.dart';
 import 'package:nector_app/features/home/presentation/views/home_view.dart';
 import 'package:nector_app/features/my_cart/presentation/views/my_cart_view.dart';
 
@@ -16,7 +17,7 @@ class _NavigationViewState extends State<NavigationView> {
     const HomeView(),
     const ExploreView(),
     const MyCartView(),
-    const HomeView(),
+    const FavoriteView(),
     const HomeView(),
   ];
   @override

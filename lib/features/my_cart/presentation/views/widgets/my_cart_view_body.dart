@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:nector_app/core/widgets/custom_divider.dart';
+import 'package:nector_app/features/my_cart/presentation/views/widgets/my_cart_list_view.dart';
 
-import 'custom_my_cart_item.dart';
+import 'custom_my_cart_text_button.dart';
 
 class MyCartViewBody extends StatelessWidget {
   const MyCartViewBody({
@@ -10,14 +10,20 @@ class MyCartViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.separated(
-      itemCount: 6,
-      itemBuilder: (context, index) {
-        return const CustomMyCartItem();
-      },
-      separatorBuilder: (BuildContext context, int index) {
-        return const CustomDivider();
-      },
+    return Column(
+      children: [
+        const MyCartListView(),
+        const SizedBox(
+          height: 8,
+        ),
+        CustomMyCartTextButton(
+          totalPrice: '120.45\$',
+          onPressed: () {},
+        ),
+        const SizedBox(
+          height: 8,
+        ),
+      ],
     );
   }
 }

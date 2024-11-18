@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:nector_app/core/widgets/custom_appbar.dart';
 import 'package:nector_app/core/widgets/custom_appbar_title.dart';
 import 'package:nector_app/core/widgets/custom_divider.dart';
-import 'widgets/my_cart_view_body.dart';
 
-class MyCartView extends StatelessWidget {
-  const MyCartView({super.key});
+import 'widgets/my_favorite_view_body.dart';
+
+class FavoriteView extends StatelessWidget {
+  const FavoriteView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,12 +14,10 @@ class MyCartView extends StatelessWidget {
       child: Column(
         children: [
           CustomAppBar(
-            child: CustomAppBarTitle(title: 'My Cart'),
+            child: CustomAppBarTitle(title: 'My Favorite'),
           ),
           CustomDivider(noIndent: true),
-          Expanded(
-            child: MyCartViewBody(),
-          ),
+          Expanded(child: FavoriteViewBody()),
         ],
       ),
     );

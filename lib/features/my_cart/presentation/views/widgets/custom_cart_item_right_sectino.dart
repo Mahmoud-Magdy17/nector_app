@@ -17,7 +17,7 @@ class CustomCartItemRightSection extends StatelessWidget {
             onTap: () {
               customShowToast(msg: "Element removed from cart");
             },
-            child: Icon(
+            child: const Icon(
               Icons.close,
               size: 32,
               color: AppColors.grey,

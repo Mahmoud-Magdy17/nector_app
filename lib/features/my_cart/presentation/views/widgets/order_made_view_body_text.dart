@@ -1,19 +1,20 @@
-
 import 'package:flutter/material.dart';
 import 'package:nector_app/core/utils/app_colors.dart';
-import 'package:nector_app/core/utils/app_strings.dart';
 import 'package:nector_app/core/utils/app_style.dart';
 
-class OrderDoneViewBodyText extends StatelessWidget {
-  const OrderDoneViewBodyText({
+class OrderMadeViewBodyText extends StatelessWidget {
+  const OrderMadeViewBodyText({
     super.key,
+    required this.title,
+    required this.subTitle,
   });
-
+  final String title;
+  final String subTitle;
   @override
   Widget build(BuildContext context) {
     return Column(children: [
       Text(
-        AppStrings.yourOrderHasBeenAccepted,
+        title,
         style: AppTextStyle.gilroy28px800.copyWith(fontSize: 28),
         textAlign: TextAlign.center,
       ),
@@ -21,7 +22,7 @@ class OrderDoneViewBodyText extends StatelessWidget {
         height: 8,
       ),
       Text(
-        AppStrings.yourItemHasBeenPlacedAnd,
+        subTitle,
         style: AppTextStyle.gilroy26px600.copyWith(
           fontSize: 16,
           color: AppColors.grey,

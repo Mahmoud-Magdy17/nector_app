@@ -51,5 +51,7 @@ final class AppStrings {
   static const String submit = "Submit";
   static const String yourOrderHasBeenAccepted = "Your Order has been accepted";
   static const String yourItemHasBeenPlacedAnd = "Your items has been placcd and is on it’s way to being processed";
+  static const String orderField = "Oops! Order Failed";
+  static const String somethingWentWrong = "Something went tembly wrong.";
 
 }

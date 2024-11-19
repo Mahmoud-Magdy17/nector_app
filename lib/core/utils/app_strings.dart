@@ -49,5 +49,7 @@ final class AppStrings {
   static const String yourArea = "Your Area";
   static const String typesOfYourArea = "Types of your area";
   static const String submit = "Submit";
-  
+  static const String yourOrderHasBeenAccepted = "Your Order has been accepted";
+  static const String yourItemHasBeenPlacedAnd = "Your items has been placcd and is on it’s way to being processed";
+
 }

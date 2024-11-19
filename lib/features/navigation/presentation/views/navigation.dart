@@ -23,8 +23,7 @@ class _NavigationViewState extends State<NavigationView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: 
-      NavigationBar(
+      bottomNavigationBar: NavigationBar(
         destinations: const [
           NavigationDestination(
             icon: Icon(Icons.home),

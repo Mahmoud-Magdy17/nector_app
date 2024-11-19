@@ -10,6 +10,7 @@ import 'package:nector_app/features/explore/presentation/views/category_view.dar
 import 'package:nector_app/features/explore/presentation/views/filters_view.dart';
 import 'package:nector_app/features/home/presentation/views/home_view.dart';
 import 'package:nector_app/features/home/presentation/views/product_details_view.dart';
+import 'package:nector_app/features/my_cart/presentation/views/order_done_view.dart';
 import 'package:nector_app/features/navigation/presentation/views/navigation.dart';
 import 'package:nector_app/features/onboarding/presentation/views/onboarding.dart';
 import 'package:nector_app/features/splash/presentation/views/spash_view.dart';
@@ -31,6 +32,7 @@ class AppRouter {
   static String filters = "/filters";
 
   static String homeView = "/homeView";
+  static String orderDoneView = "/orderDoneView";
 
   static Map<String, dynamic> routes = {
     splashView: const SplashView(),
@@ -45,9 +47,9 @@ class AppRouter {
     selectLocationView: const SelectLocationView(),
     homeView: const HomeView(),
     productDetailsView: const ProductDetailsView(),
-    categoryView:const CategoryView(),
-    navigationView:const NavigationView(),
-    filters:const FiltersView(),
-
+    categoryView: const CategoryView(),
+    navigationView: const NavigationView(),
+    filters: const FiltersView(),
+    orderDoneView: const OrderDoneView(),
   };
 }

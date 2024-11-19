@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:nector_app/core/router/app_router.dart';
+import 'package:nector_app/core/utils/app_functions.dart';
 import 'package:nector_app/core/widgets/custom_text_button.dart';
 
 import 'checkout_bottom_sheet_appbar.dart';
@@ -23,6 +25,10 @@ class CustomCheckoutModalBottomSheet extends StatelessWidget {
             text: "Place Order",
             onPressed: () {
               Navigator.pop(context);
+              navigationPush(
+                context,
+                AppRouter.routes[AppRouter.orderDoneView],
+              );
             },
           ),
         ],

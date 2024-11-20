@@ -10,12 +10,13 @@ class CustomScaffold extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DecoratedBox(
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage(AppAssets.backGround),
-            fit: BoxFit.fill,
-          ),
+      decoration: const BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage(AppAssets.backGround),
+          fit: BoxFit.fill,
         ),
-        child: body);
+      ),
+      child: body,
+    );
   }
 }

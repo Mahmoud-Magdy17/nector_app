@@ -14,7 +14,7 @@ class LoginView extends StatelessWidget {
       body: CustomScaffold(
         body: SafeArea(
           child: Padding(
-            padding: const EdgeInsets.only(left: 25.0, right: 25.0,top: 50),
+            padding: const EdgeInsets.only(left: 25.0, right: 25.0, top: 50),
             child: ListView(
               children: const [
                 AuthonticationViewsHeader(

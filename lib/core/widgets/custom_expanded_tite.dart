@@ -51,7 +51,10 @@ class _CustomExpandedTileState extends State<CustomExpandedTile> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           widget.title,
-          ExpandedListTileLabel(curState: curState, label: widget.label,)
+          ExpandedListTileLabel(
+            curState: curState,
+            label: widget.label,
+          )
         ],
       ),
       children: widget.children,

@@ -6,9 +6,6 @@ class AccountView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.symmetric(horizontal: 25.0),
-      child: AccountViewBody(),
-    );
+    return const AccountViewBody();
   }
 }

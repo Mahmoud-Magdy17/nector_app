@@ -1,29 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:nector_app/core/utils/app_colors.dart';
 
-import 'custom_account_circle_image.dart';
-import 'username_and_email_label.dart';
+import 'account_details_section.dart';
+import 'account_view_action_section.dart';
 
 class AccountViewBody extends StatelessWidget {
   const AccountViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       children: [
-        SafeArea(
-          child: SizedBox(
-            height: 124,
-            width: MediaQuery.of(context).size.width,
-            child: const Row(
-              children: [
-                CustomAccountCircleImage(),
-                SizedBox(
-                  width: 16,
-                ),
-                UsernameAndEmailLabel()
-              ],
-            ),
-          ),
+        AccountDetailsSection(),
+        AccountViewActionsSection(),
+        Divider(
+          color: AppColors.grey,
+          thickness: 1,
         )
       ],
     );

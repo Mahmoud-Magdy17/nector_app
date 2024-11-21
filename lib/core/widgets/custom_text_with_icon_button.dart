@@ -9,11 +9,13 @@ class CustomTextWithIconButton extends StatelessWidget {
     required this.onPressed,
     this.color = AppColors.primaryColor,
     required this.icon,
+    this.textColor = AppColors.white,
   });
   final Icon icon;
   final Color color;
   final Function() onPressed;
   final String text;
+  final Color textColor;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -39,7 +41,7 @@ class CustomTextWithIconButton extends StatelessWidget {
                 text,
                 style: AppTextStyle.gilroy26px600.copyWith(
                   fontSize: 18,
-                  color: AppColors.white,
+                  color: textColor,
                 ),
               ),
             ),

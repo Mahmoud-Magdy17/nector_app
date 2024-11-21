@@ -10,12 +10,14 @@ class CustomTextWithIconButton extends StatelessWidget {
     this.color = AppColors.primaryColor,
     required this.icon,
     this.textColor = AppColors.white,
+    this.centerText = false,
   });
   final Icon icon;
   final Color color;
   final Function() onPressed;
   final String text;
   final Color textColor;
+  final bool centerText;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -38,6 +40,7 @@ class CustomTextWithIconButton extends StatelessWidget {
             Expanded(
               flex: 5,
               child: Text(
+                textAlign: centerText?TextAlign.center:TextAlign.start,
                 text,
                 style: AppTextStyle.gilroy26px600.copyWith(
                   fontSize: 18,

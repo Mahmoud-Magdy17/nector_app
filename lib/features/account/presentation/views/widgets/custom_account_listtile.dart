@@ -11,17 +11,22 @@ class CustomAccountViewListTile extends StatelessWidget {
   final String title;
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      leading: Icon(
-        leading,
-        size: 32,
-      ),
-      title: Text(
-        title,
-        style: AppTextStyle.gilroy28px800.copyWith(fontSize: 20),
-      ),
-      trailing: const Icon(
-        Icons.arrow_forward_ios,
+    return SizedBox(
+      height: 58,
+      child: ListTile(
+        // contentPadding: EdgeInsets.symmetric(vertical: 0),
+        
+        leading: Icon(
+          leading,
+          size: 32,
+        ),
+        title: Text(
+          title,
+          style: AppTextStyle.gilroy28px800.copyWith(fontSize: 20),
+        ),
+        trailing: const Icon(
+          Icons.arrow_forward_ios,
+        ),
       ),
     );
   }

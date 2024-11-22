@@ -8,7 +8,7 @@ class CateroyGridItem extends StatelessWidget {
     this.color = const Color.fromARGB(82, 177, 117, 26),
     this.categoryName = 'Frash Fruits & Vegetable',
     this.imageLink =
-        'https://img.freepik.com/free-psd/isolated-old-paper-scroll-ancient-papyrus_1409-3481.jpg?t=st=1730576038~exp=1730579638~hmac=5e009a917b38400f09a58059a4dfaaefd95be02d9bd46a317af4edead52587a9&w=826',
+        'https://cdn-icons-png.flaticon.com/128/706/706164.png',
   });
   final Color color;
   final String categoryName;

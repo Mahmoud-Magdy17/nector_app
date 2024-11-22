@@ -16,6 +16,14 @@ class GroceriesListView extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         children: const [
           GroceriesItemCard(),
+          SizedBox(width: 16),
+          GroceriesItemCard(),
+          SizedBox(width: 16),
+          GroceriesItemCard(),
+          SizedBox(width: 16),
+          GroceriesItemCard(),
+          SizedBox(width: 16),
+          GroceriesItemCard(),
         ],
       ),
     );

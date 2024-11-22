@@ -8,7 +8,7 @@ class CustomMyCartItem extends StatelessWidget {
     super.key,
   });
   final String image =
-      'https://th.bing.com/th/id/OIP.UYagQDMo7CCbBLXOPB5etAHaHa?rs=1&pid=ImgDetMain';
+      'https://cdn-icons-png.flaticon.com/128/2276/2276931.png';
   @override
   Widget build(BuildContext context) {
     return Container(

@@ -30,7 +30,7 @@ class CustomElementCard extends StatelessWidget {
               SizedBox(
                 width: (MediaQuery.of(context).size.width / 2.40) / 1.5,
                 child: Image.network(
-                    'https://img.freepik.com/free-psd/isolated-old-paper-scroll-ancient-papyrus_1409-3481.jpg?t=st=1730576038~exp=1730579638~hmac=5e009a917b38400f09a58059a4dfaaefd95be02d9bd46a317af4edead52587a9&w=826'),
+                    'https://cdn-icons-png.flaticon.com/128/2276/2276931.png'),
               ),
             ],
           ),

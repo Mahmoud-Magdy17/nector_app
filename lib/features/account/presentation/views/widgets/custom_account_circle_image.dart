@@ -17,8 +17,8 @@ class CustomAccountCircleImage extends StatelessWidget {
         borderRadius: BorderRadius.circular(48),
       ),
       child: Image.network(
-        'https://th.bing.com/th/id/R.64de7efbdc763be88abee42bf36d190d?rik=z54qshSQj0PxvQ&pid=ImgRaw&r=0',
-        fit: BoxFit.fill,
+        'https://th.bing.com/th/id/OIP.Ys5ORmPfhnAit-66JwaqMQHaEJ?rs=1&pid=ImgDetMain',
+        fit: BoxFit.cover,
       ),
     );
   }

@@ -22,7 +22,7 @@ class GroceriesItemCard extends StatelessWidget {
             height: 80,
             child: Image.network(
               fit: BoxFit.contain,
-              'https://th.bing.com/th/id/OIP.UYagQDMo7CCbBLXOPB5etAHaHa?rs=1&pid=ImgDetMain',
+              'https://cdn-icons-png.flaticon.com/128/3514/3514218.png',
             ),
           ),
           const SizedBox(

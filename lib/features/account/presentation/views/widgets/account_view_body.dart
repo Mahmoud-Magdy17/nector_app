@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:nector_app/core/router/app_router.dart';
 import 'package:nector_app/core/utils/app_colors.dart';
+import 'package:nector_app/core/utils/app_functions.dart';
 import 'package:nector_app/core/widgets/custom_text_with_icon_button.dart';
 
 import 'account_details_section.dart';
@@ -23,9 +25,12 @@ class AccountViewBody extends StatelessWidget {
           padding: const EdgeInsets.only(bottom: 25,left: 16,right: 16),
           child: CustomTextWithIconButton(
             text: "Sign Out",
-            onPressed: () {},
+            onPressed: () {
+              navigationPushReplacement(context, AppRouter.routes[AppRouter.loginView]);
+            },
             icon: const Icon(
               Icons.logout_outlined,
+              color: AppColors.primaryColor,
             ),
             color: AppColors.offWhite,
             textColor: AppColors.primaryColor,

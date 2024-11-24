@@ -31,13 +31,13 @@ class CodeFieldDigit extends StatelessWidget {
         controller: controller,
         cursorColor: AppColors.white,
         onTap: () {
-          controller.text = '';
+          controller.selection = TextSelection.fromPosition(
+            TextPosition(offset: controller.text.length),
+          );
         },
         onChanged: (value) {
           if (value.length > 1) {
-            String a = '';
-            a = value[1];
-            controller.text = a;
+            controller.text = value[1];
             FocusScope.of(context).nextFocus();
           } else if (value.length == 1) {
             FocusScope.of(context).nextFocus();

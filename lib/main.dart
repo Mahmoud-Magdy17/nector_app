@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:nector_app/features/authontication/presentation/manager/authontication_cubit/authontication_cubit.dart';
 
 import 'core/router/app_router.dart';
+import 'features/authontication/presentation/manager/authontication_cubit/authontication_cubit.dart';
 
 void main() {
   runApp(const NectorApp());

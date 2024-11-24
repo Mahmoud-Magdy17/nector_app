@@ -18,7 +18,7 @@ final class AppStrings {
   static const String resetPassword = "Reset Password";
   static const String enterTheCodeTha =
       "Enter the code that was sent to your email address";
-  static const String enterThe5Dig = "Enter the 5 digits code";
+  static const String enterThe6Dig = "Enter the 6 digits code";
   static const String sendCode = "Send Code";
   static const String enterNewPassword =
       "Enter new password for your account ro reset password";

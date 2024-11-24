@@ -39,7 +39,9 @@ class ResetPasswordNewEmailBottomSheet extends StatelessWidget {
             onPressed: () {
               Navigator.pop(context);
               navigationPushReplacement(
-                  context, AppRouter.routes[AppRouter.resetPasswordDoneView]);
+                context,
+                AppRouter.routes[AppRouter.resetPasswordDoneView],
+              );
             },
           )
         ],

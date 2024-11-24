@@ -9,11 +9,9 @@ class AuthonticationViewsHeader extends StatelessWidget {
     super.key,
     required this.title,
     required this.subTitle,
-    this.haveImage = true,
   });
   final String title;
   final String subTitle;
-  final bool haveImage;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -21,7 +19,7 @@ class AuthonticationViewsHeader extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          haveImage ? const AuthonticationViewHeaderImage() : const SizedBox(),
+          const AuthonticationViewHeaderImage() ,
           Text(
             title,
             style: AppTextStyle.gilroy26px600

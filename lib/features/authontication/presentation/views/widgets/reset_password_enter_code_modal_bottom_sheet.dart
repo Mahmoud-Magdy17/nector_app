@@ -18,9 +18,10 @@ class ResetPasswordEnterCodeModalBottomSheet extends StatelessWidget {
       title: AppStrings.resetPassword,
       subTitle: AppStrings.enterTheCodeTha,
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            AppStrings.enterThe5Dig,
+            AppStrings.enterThe6Dig,
             style: AppTextStyle.gilroy26px600.copyWith(
               color: AppColors.grey,
               fontSize: 20,

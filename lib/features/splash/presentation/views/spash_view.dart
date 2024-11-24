@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nector_app/core/utils/app_colors.dart';
 import 'package:nector_app/features/splash/presentation/views/widgets/splash_view_body.dart';
 
 class SplashView extends StatelessWidget {
@@ -6,6 +7,9 @@ class SplashView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SplashViewBody();
+    return const Scaffold(
+      backgroundColor: AppColors.primaryColor,
+      body: SplashViewBody(),
+    );
   }
 }

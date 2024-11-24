@@ -23,21 +23,19 @@ class _SplashViewBodyState extends State<SplashViewBody> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        backgroundColor: AppColors.primaryColor,
-      body: Container(
-        alignment: Alignment.center,
-        padding: const EdgeInsets.all(24),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset(AppAssets.logoSplash),
-            const SizedBox(height: 20),
-            const CircularProgressIndicator(
-              color: AppColors.white,
-            ),
-          ],
-        ),
-      ));
+    return Container(
+      alignment: Alignment.center,
+      padding: const EdgeInsets.all(24),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset(AppAssets.logoSplash),
+          const SizedBox(height: 20),
+          const CircularProgressIndicator(
+            color: AppColors.white,
+          ),
+        ],
+      ),
+    );
   }
 }

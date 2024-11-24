@@ -1,66 +1,33 @@
 import 'package:flutter/material.dart';
-import 'package:nector_app/core/router/app_router.dart';
-import 'package:nector_app/core/utils/app_functions.dart';
 import 'package:nector_app/core/utils/app_strings.dart';
-import 'package:nector_app/core/widgets/custom_text_button.dart';
 import 'package:nector_app/features/authontication/presentation/views/widgets/authontication_view_header.dart';
-import 'package:nector_app/features/authontication/presentation/views/widgets/custom_email_form_field.dart';
-import 'package:nector_app/features/authontication/presentation/views/widgets/custom_password_form_field.dart';
-import 'package:nector_app/features/authontication/presentation/views/widgets/custom_user_name_form_field.dart';
-import 'package:nector_app/features/authontication/presentation/views/widgets/dont_have_account_action.dart';
 
-import 'terms_line.dart';
+import 'signup_view_body_content.dart';
 
 class SignUpViewBody extends StatelessWidget {
   const SignUpViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(25.0),
-      child: SingleChildScrollView(
-        child: Column(
-          children: [
-            const SizedBox(
-              height: 40,
-            ),
-            const AuthonticationViewsHeader(
-              title: AppStrings.signUp,
-              subTitle: AppStrings.enterYourCredentialsToContinue,
-            ),
-            const SizedBox(
-              height: 40,
-            ),
-            const CustomUserNameFormField(label: AppStrings.userName),
-            const SizedBox(
-              height: 30,
-            ),
-            const CustomEmailFormField(),
-            const SizedBox(
-              height: 30,
-            ),
-            const CustomPasswordFormField(label: AppStrings.password),
-            const SizedBox(
-              height: 20,
-            ),
-            const TermsLine(),
-            const SizedBox(
-              height: 30,
-            ),
-            CustomTextButton(text: AppStrings.signUp, onPressed: () {
-              navigationPush(context, AppRouter.routes[AppRouter.singupDataCollectMethodView]);
-            }),
-            const SizedBox(
-              height: 25,
-            ),
-            OtherAuthenticationActoins(
-              text: AppStrings.alreadyHaveAnAccount,
-              action: AppStrings.logIn,
-              onPressed: () {
-                navigationPushReplacement(context, AppRouter.routes[AppRouter.loginView]);
-              },
-            )
-          ],
+    return const SafeArea(
+      child: Padding(
+        padding: EdgeInsets.all(25.0),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              SizedBox(
+                height: 40,
+              ),
+              AuthonticationViewsHeader(
+                title: AppStrings.signUp,
+                subTitle: AppStrings.enterYourCredentialsToContinue,
+              ),
+              SizedBox(
+                height: 40,
+              ),
+              SignupViewBodyContent(),
+            ],
+          ),
         ),
       ),
     );

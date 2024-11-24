@@ -9,8 +9,10 @@ import 'custom_password_form_field.dart';
 import 'dont_have_account_action.dart';
 import 'forget_password_button.dart';
 
-class LoginViewBody extends StatelessWidget {
-  const LoginViewBody({super.key});
+class SigninViewBodyContent extends StatelessWidget {
+  const SigninViewBodyContent({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

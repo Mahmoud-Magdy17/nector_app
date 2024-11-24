@@ -1,33 +1,27 @@
 import 'package:flutter/material.dart';
-import 'package:nector_app/core/utils/app_assets.dart';
 import 'package:nector_app/core/utils/app_colors.dart';
 import 'package:nector_app/core/utils/app_style.dart';
+
+import 'authontication_view_header_image.dart';
 
 class AuthonticationViewsHeader extends StatelessWidget {
   const AuthonticationViewsHeader({
     super.key,
     required this.title,
     required this.subTitle,
+    this.haveImage = true,
   });
   final String title;
   final String subTitle;
+  final bool haveImage;
   @override
   Widget build(BuildContext context) {
-    return 
-    SizedBox(
+    return SizedBox(
       height: 224,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Container(
-            padding: const EdgeInsets.only( bottom: 70),
-            alignment: Alignment.center,
-            width: MediaQuery.of(context).size.width,
-            child: Image.asset(
-              AppAssets.carrot,
-              scale: 3.5,
-            ),
-          ),
+          haveImage ? const AuthonticationViewHeaderImage() : const SizedBox(),
           Text(
             title,
             style: AppTextStyle.gilroy26px600

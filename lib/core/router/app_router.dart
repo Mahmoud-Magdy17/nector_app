@@ -1,6 +1,6 @@
 import 'package:nector_app/features/authontication/presentation/views/entering_4_digit_code_view.dart';
 import 'package:nector_app/features/authontication/presentation/views/forget_password_view.dart';
-import 'package:nector_app/features/authontication/presentation/views/login_view.dart';
+import 'package:nector_app/features/authontication/presentation/views/signin_view.dart';
 import 'package:nector_app/features/authontication/presentation/views/phone_number_entering_view.dart';
 import 'package:nector_app/features/authontication/presentation/views/reset_password_done_view.dart';
 import 'package:nector_app/features/authontication/presentation/views/select_location_view.dart';
@@ -37,7 +37,7 @@ class AppRouter {
   static Map<String, dynamic> routes = {
     splashView: const SplashView(),
     onBoardingView: const OnBoarding(),
-    loginView: const LoginView(),
+    loginView: const SigninView(),
     forgetPasswordView: const ForgetPasswordView(),
     resetPasswordDoneView: const ResetPasswordDoneView(),
     signUpView: const SignUpView(),

@@ -26,7 +26,12 @@ This project follows the **MVVM Architecture**, ensuring scalability and maintai
 
 ---
 ## 📱 Screenshots
-(Include some screenshots of the app interface here)
+
+![onBoarding View](screenshots/onBoardingView.png)
+![Login Screen](screenshots/login_screen.png)
+![Home Screen](screenshots/home_screen.png)
+
+
 
 ---
 ## 🛠️ Tech Stack
@@ -55,7 +60,7 @@ This project follows the **MVVM Architecture**, ensuring scalability and maintai
 ---
 ## 📥 Download & Test the App
 You can test the app by downloading the APK from the following link:
-[🔗 Download APK](https://drive.google.com/file/d/1AYux0iECSTfwGsUonPkMXwX3jjgmtR73/view?usp=sharing)
+[🔗 Download APK](https://drive.google.com/file/d/1MBBa1gHRrxKAxwoH87vSo9cXWP2pS8Vv/view?usp=sharing)
 
 ---
 ## 🔗 Live Project & Demo
@@ -67,10 +72,6 @@ Check out the project demo on LinkedIn:
 **Mahmoud Magdy Zaghloul**  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/mahmoudmagdy176/)  
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?logo=github)](https://github.com/Mahmoud-Magdy17)
-
----
-## 📜 License
-This project is open-source and available under the **MIT License**.
 
 ---
 ## 🙌 Contributing

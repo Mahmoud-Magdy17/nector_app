@@ -1,6 +1,6 @@
 {
-    "name": "nector_app",
-    "short_name": "nector_app",
+    "name": "nector_app2",
+    "short_name": "nector_app2",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
